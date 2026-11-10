@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>こもれび整体院｜吉祥寺駅 徒歩4分・完全予約制の整体院（見本サイト）</title>
+<meta name="description" content="吉祥寺駅から徒歩4分。はじめに20分お話を聞く、完全予約制・1対1の整体院です。（ホームページの見本・架空の店舗）">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f2ea; --paper2:#efe9dd; --card:#fffdf8; --ink:#2a2622; --sub:#6d665c;
+  --green:#34493c; --green-d:#26362c; --accent:#b4623c; --gold:#b89b6a; --line:#ddd5c5;
+  --serif:"Shippori Mincho","Yu Mincho",serif; --en:"Cormorant Garamond",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;font-size:15px;line-height:2;letter-spacing:.04em;padding-bottom:68px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.serif{font-family:var(--serif);font-weight:500}
+.en{font-family:var(--en);letter-spacing:.14em}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.12s}.js .rv.d2{transition-delay:.24s}.js .rv.d3{transition-delay:.36s}
+
+.demo-bar{background:#1c1a17;color:#cfc7b8;font-size:11px;text-align:center;padding:5px 10px;letter-spacing:.06em;position:relative;z-index:60}
+.demo-bar a{color:var(--gold);text-decoration:underline}
+
+/* header */
+header{position:fixed;top:27px;left:0;right:0;z-index:50;transition:background .4s,box-shadow .4s,top .3s;color:#fff}
+header.solid{top:0;background:rgba(246,242,234,.96);backdrop-filter:blur(10px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.head{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;flex-direction:column;line-height:1.3}
+.logo b{font-family:var(--serif);font-weight:600;font-size:19px;letter-spacing:.14em}
+.logo small{font-family:var(--en);font-size:10px;letter-spacing:.3em;opacity:.8}
+.gnav{display:none;gap:30px;font-size:13px}
+.gnav a{position:relative;padding:6px 0}
+.gnav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:currentColor;transition:width .3s}
+.gnav a:hover::after{width:100%}
+.head-cta{display:none;align-items:center;gap:18px}
+.head-tel{font-family:var(--en);font-size:21px;letter-spacing:.08em;line-height:1.2}
+.head-tel small{display:block;font-family:"Noto Sans JP";font-size:10px;letter-spacing:.05em;opacity:.8}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:#fff;font-weight:500;padding:16px 34px;font-size:14px;letter-spacing:.1em;border:1px solid var(--accent);transition:background .3s,color .3s;cursor:pointer}
+.btn:hover{background:#9c5231}
+.btn::after{content:"";width:18px;height:1px;background:currentColor;transition:width .3s}
+.btn:hover::after{width:28px}
+.btn.sm{padding:11px 22px;font-size:13px}
+.btn.line{background:transparent;color:inherit;border-color:currentColor}
+.btn.line:hover{background:#fff;color:var(--ink);border-color:#fff}
+.burger{width:44px;height:44px;border:0;background:none;color:inherit;position:relative;cursor:pointer}
+.burger i,.burger i::before{content:"";position:absolute;left:10px;width:24px;height:1.5px;background:currentColor;transition:.3s}
+.burger i{top:18px}.burger i::before{top:8px;left:0}
+.open .burger i{transform:translateY(4px) rotate(45deg)}.open .burger i::before{transform:translateY(-8px) rotate(-90deg)}
+.drawer{position:fixed;inset:0;z-index:45;background:var(--green-d);color:#f3eee2;display:flex;flex-direction:column;justify-content:center;padding:80px 34px 40px;opacity:0;pointer-events:none;transition:opacity .35s}
+.open .drawer{opacity:1;pointer-events:auto}
+.open header{color:#fff;background:transparent;box-shadow:none}
+.drawer a.m{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--serif);font-size:20px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.drawer a.m span{font-family:var(--en);font-size:12px;opacity:.6}
+.drawer .btn{margin-top:28px}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 27px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:#3a2f26}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:slow 18s ease-out forwards}
+@keyframes slow{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,27,20,.55) 0%,rgba(34,27,20,.32) 40%,rgba(34,27,20,.8) 100%)}
+.hero-in{position:relative;width:100%;padding-bottom:24px}
+.hero .place{font-size:12px;letter-spacing:.2em;display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.hero .place::before{content:"";width:34px;height:1px;background:#fff}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(34px,9.4vw,72px);line-height:1.5;letter-spacing:.1em;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.hero .lead{margin-top:18px;max-width:30em;font-size:14px;line-height:2.1;opacity:.95}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.vertical{display:none}
+.hero-info{position:relative;margin-top:38px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.35)}
+.hero-info div{padding:12px 2px 0;font-size:10px;line-height:1.7;opacity:.95}
+.hero-info div+div{border-left:1px solid rgba(255,255,255,.25);padding-left:10px}
+.hero-info b{display:block;font-family:var(--serif);font-weight:500;font-size:13px;letter-spacing:.04em;white-space:nowrap}
+
+/* news */
+.news{border-bottom:1px solid var(--line);background:var(--card)}
+.news .wrap{display:flex;gap:16px;align-items:center;padding-top:14px;padding-bottom:14px;font-size:13px;overflow:hidden}
+.news .tag{font-family:var(--en);font-size:13px;letter-spacing:.2em;color:var(--accent);flex:none}
+.news time{color:var(--sub);flex:none;font-family:var(--en);font-size:14px}
+.news a{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-bottom:1px solid transparent}
+.news a:hover{border-color:currentColor}
+
+section{padding:84px 0}
+.ttl{margin-bottom:38px}
+.ttl .en{display:block;font-size:14px;color:var(--accent);margin-bottom:6px;text-transform:uppercase}
+.ttl h2{font-family:var(--serif);font-weight:500;font-size:clamp(25px,6vw,38px);line-height:1.6;letter-spacing:.1em}
+.ttl p{margin-top:14px;color:var(--sub)}
+.ttl.c{text-align:center}
+
+/* concept */
+.concept-grid{display:grid;gap:44px}
+.photos{position:relative;padding:0 0 46px 0}
+.photos .p1{width:82%;aspect-ratio:4/5;overflow:hidden}
+.photos .p2{position:absolute;right:0;bottom:0;width:46%;aspect-ratio:1/1;overflow:hidden;border:8px solid var(--paper)}
+.photos img,.pt img,.g img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.photos div:hover img,.pt:hover img,.g:hover img{transform:scale(1.06)}
+.photos .cap{position:absolute;left:0;bottom:8px;font-family:var(--en);font-size:12px;letter-spacing:.2em;color:var(--sub)}
+.concept h2{font-family:var(--serif);font-weight:500;font-size:clamp(24px,5.8vw,36px);line-height:1.75;letter-spacing:.1em;margin:8px 0 24px}
+.concept p+p{margin-top:1.2em}
+.concept .num{font-family:var(--en);font-style:italic;font-size:15px;color:var(--accent);letter-spacing:.1em}
+.sign{margin-top:26px;font-family:var(--serif);font-size:15px}
+.sign b{font-weight:500;font-size:21px;margin-left:12px;letter-spacing:.16em}
+
+/* points */
+.points{background:var(--paper2)}
+.pt-grid{display:grid;gap:40px}
+.pt .ph{aspect-ratio:4/3;overflow:hidden;margin-bottom:20px}
+.pt .n{font-family:var(--en);font-size:38px;line-height:1;color:var(--gold);font-style:italic}
+.pt h3{font-family:var(--serif);font-weight:500;font-size:20px;letter-spacing:.08em;line-height:1.7;margin:6px 0 10px}
+.pt p{color:var(--sub);font-size:14px}
+
+/* worries */
+.worry{background:var(--green);color:#efeadf;position:relative;overflow:hidden}
+.worry::before{content:"Check";position:absolute;right:-10px;top:10px;font-family:var(--en);font-style:italic;font-size:150px;line-height:1;color:rgba(255,255,255,.045)}
+.worry .ttl .en{color:#d9b48f}.worry .ttl p{color:#c2ccc1}
+.chips{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.chips li{display:flex;gap:14px;align-items:flex-start;padding:15px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);font-size:14px;line-height:1.8}
+.chips li::before{content:"";flex:none;margin-top:7px;width:14px;height:8px;border-left:1.5px solid #d9b48f;border-bottom:1.5px solid #d9b48f;transform:rotate(-45deg)}
+.worry .after{margin-top:34px;text-align:center;font-family:var(--serif);font-size:17px;line-height:2;letter-spacing:.1em}
+
+/* flow */
+.flow{list-style:none;margin:0;padding:0;counter-reset:f;position:relative}
+.flow li{counter-increment:f;position:relative;padding:0 0 36px 66px}
+.flow li::before{content:counter(f,decimal-leading-zero);position:absolute;left:0;top:-4px;width:46px;height:46px;border:1px solid var(--accent);border-radius:50%;display:grid;place-items:center;font-family:var(--en);font-size:18px;color:var(--accent);background:var(--paper)}
+.flow li::after{content:"";position:absolute;left:23px;top:46px;bottom:0;width:1px;background:var(--line)}
+.flow li:last-child::after{display:none}
+.flow h3{font-family:var(--serif);font-weight:500;font-size:19px;letter-spacing:.08em;display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}
+.flow h3 span{font-family:"Noto Sans JP";font-size:11px;color:var(--accent);border:1px solid var(--accent);padding:0 9px;line-height:1.9}
+.flow p{color:var(--sub);font-size:14px;margin-top:6px}
+
+/* menu */
+.menu{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.menu-grid{display:grid;gap:40px}
+.first{position:relative;color:#fff;min-height:340px;display:flex;align-items:flex-end;overflow:hidden}
+.first img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.first::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,24,18,.1),rgba(30,24,18,.82))}
+.first .in{position:relative;z-index:1;padding:26px 24px;width:100%}
+.first .badge{display:inline-block;font-size:11px;background:var(--accent);padding:1px 12px;letter-spacing:.14em}
+.first h3{font-family:var(--serif);font-weight:500;font-size:24px;letter-spacing:.1em;margin:8px 0 2px}
+.first .pr{font-family:var(--en);font-size:44px;line-height:1.2;letter-spacing:.04em}
+.first .pr small{font-family:"Noto Sans JP";font-size:12px;margin-left:6px}
+.first .pr s{font-size:20px;opacity:.7;margin-right:10px}
+.plist{list-style:none;margin:0;padding:0}
+.plist li{padding:20px 0;border-bottom:1px solid var(--line)}
+.plist li:first-child{border-top:1px solid var(--line)}
+.plist .row{display:flex;align-items:baseline;gap:12px}
+.plist h3{font-family:var(--serif);font-weight:500;font-size:18px;letter-spacing:.08em;flex:none}
+.plist .dots{flex:1;border-bottom:1px dotted #b9ae99;transform:translateY(-5px)}
+.plist .yen{font-family:var(--en);font-size:26px;letter-spacing:.04em;flex:none;line-height:1}
+.plist .yen small{font-family:"Noto Sans JP";font-size:11px;margin-left:3px}
+.plist p{font-size:13px;color:var(--sub);margin-top:4px}
+.fine{font-size:12px;color:var(--sub);margin-top:18px;line-height:1.9}
+
+/* voice */
+.voices{display:grid;gap:18px}
+.voice{background:var(--card);border:1px solid var(--line);padding:30px 26px 26px;position:relative}
+.voice::before{content:"“";position:absolute;left:20px;top:2px;font-family:var(--en);font-size:70px;line-height:1;color:var(--gold);opacity:.6}
+.voice h3{font-family:var(--serif);font-weight:500;font-size:17px;line-height:1.8;letter-spacing:.06em;margin:18px 0 10px}
+.voice p{font-size:13.5px;color:var(--sub)}
+.voice .who{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;display:flex;justify-content:space-between;color:var(--sub)}
+.voice-note{font-size:11px;color:var(--sub);margin-top:14px;text-align:right}
+
+/* director */
+.director{background:var(--paper2)}
+.dir-grid{display:grid;gap:36px}
+.dir-ph{aspect-ratio:4/5;overflow:hidden;max-width:420px}
+.dir-ph img{width:100%;height:100%;object-fit:cover}
+.bio{margin-top:26px;border-top:1px solid var(--line)}
+.bio div{display:grid;grid-template-columns:5em 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px}
+.bio dt{color:var(--sub)}.bio dd{margin:0}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0}
+.g{aspect-ratio:1/1;overflow:hidden}
+
+/* faq */
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 44px;position:relative;font-family:var(--serif);font-size:16.5px;letter-spacing:.06em;line-height:1.8}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q.";position:absolute;left:0;top:17px;font-family:var(--en);font-size:24px;color:var(--accent)}
+.faq summary::after{content:"";position:absolute;right:8px;top:30px;width:9px;height:9px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);transform:rotate(45deg);transition:.3s}
+.faq details[open] summary::after{transform:rotate(-135deg);top:34px}
+.faq details p{padding:0 0 24px 44px;color:var(--sub);font-size:14px}
+
+/* access */
+.access{background:var(--card);border-top:1px solid var(--line)}
+.acc-grid{display:grid;gap:32px}
+.map{aspect-ratio:4/3;background:#e6e0d3}
+.map iframe{width:100%;height:100%;border:0;filter:saturate(.75) contrast(.96)}
+.info{width:100%;border-collapse:collapse;font-size:14px}
+.info th{text-align:left;font-weight:400;color:var(--sub);white-space:nowrap;vertical-align:top;padding:13px 18px 13px 0;border-bottom:1px solid var(--line);width:5em}
+.info td{padding:13px 0;border-bottom:1px solid var(--line)}
+.hours{width:100%;border-collapse:collapse;margin-top:22px;text-align:center;font-size:13px}
+.hours th,.hours td{padding:10px 2px;border-bottom:1px solid var(--line)}
+.hours thead th{font-weight:400;color:var(--sub);border-bottom:1px solid var(--ink)}
+.hours tbody th{font-family:var(--en);font-size:15px;font-weight:400;white-space:nowrap;text-align:left;letter-spacing:.04em}
+.hours .o{color:var(--green)}.hours .x{color:#c1b8a6}
+.hours-note{font-size:12px;color:var(--sub);margin-top:10px}
+
+/* reserve */
+.reserve{position:relative;color:#fff;text-align:center;padding:96px 0;overflow:hidden}
+.reserve .bg{position:absolute;inset:0}
+.reserve .bg img{width:100%;height:100%;object-fit:cover}
+.reserve .bg::after{content:"";position:absolute;inset:0;background:rgba(32,40,34,.8)}
+.reserve .wrap{position:relative}
+.reserve .ttl .en{color:#d9b48f}
+.reserve .ttl p{color:#d8d3c6}
+.res-grid{display:grid;gap:14px;max-width:780px;margin:0 auto}
+.res{border:1px solid rgba(255,255,255,.4);padding:26px 18px;transition:background .3s}
+.res:hover{background:rgba(255,255,255,.08)}
+.res small{display:block;font-size:12px;letter-spacing:.14em;opacity:.85}
+.res b{display:block;font-family:var(--en);font-weight:400;font-size:30px;letter-spacing:.08em;line-height:1.5}
+.res.main{background:var(--accent);border-color:var(--accent)}
+.res.main:hover{background:#9c5231}
+.res.main b{font-family:var(--serif);font-size:21px;letter-spacing:.14em;line-height:2.1}
+
+footer{background:#1f1c18;color:#b9b1a2;padding:56px 0 30px;font-size:13px}
+.foot{display:grid;gap:32px}
+footer .logo{color:#f3eee2;margin-bottom:14px}
+footer nav{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}
+footer nav a:hover{color:#fff}
+.copy{margin-top:40px;padding-top:20px;border-top:1px solid #38332c;font-size:11px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between;color:#857d6f}
+
+.bottom{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1.5fr;background:var(--card);box-shadow:0 -1px 0 var(--line);padding-bottom:env(safe-area-inset-bottom)}
+.bottom a{display:flex;flex-direction:column;align-items:center;justify-content:center;height:60px;font-size:13px;font-weight:500;letter-spacing:.1em;line-height:1.5}
+.bottom a small{font-size:10px;font-weight:400;opacity:.8;letter-spacing:.04em}
+.bottom a.r{background:var(--accent);color:#fff}
+
+@media (min-width:900px){
+  body{padding-bottom:0;font-size:15.5px}
+  .bottom,.burger{display:none}
+  .gnav,.head-cta{display:flex}
+  .head{height:84px}
+  .wrap{padding:0 40px}
+  .hero-in{padding-bottom:0}
+  .hero h1{line-height:1.55}
+  .hero .lead{font-size:15px}
+  .vertical{display:block;position:absolute;right:40px;top:150px;writing-mode:vertical-rl;font-family:var(--serif);font-size:15px;letter-spacing:.5em;opacity:.9}
+  .vertical::after{content:"";display:block;width:1px;height:90px;background:#fff;margin:18px auto 0}
+  .hero-info{margin-top:64px;max-width:none}
+  .hero-info div{padding:22px 8px 26px;font-size:12px}
+  .hero-info div+div{padding-left:28px}
+  .hero-info b{font-size:19px;letter-spacing:.08em}
+  section{padding:140px 0}
+  .ttl{margin-bottom:60px}
+  .concept-grid{grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+  .pt-grid{grid-template-columns:repeat(3,1fr);gap:44px}
+  .pt:nth-child(2){margin-top:56px}
+  .pt:nth-child(3){margin-top:112px}
+  .chips{grid-template-columns:repeat(3,1fr);gap:14px}
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .flow li{padding:76px 28px 0 0}
+  .flow li::before{top:0;width:54px;height:54px;font-size:20px}
+  .flow li::after{left:54px;right:0;top:27px;bottom:auto;width:auto;height:1px}
+  .menu-grid{grid-template-columns:.9fr 1.1fr;gap:70px;align-items:stretch}
+  .first{min-height:480px}
+  .voices{grid-template-columns:repeat(3,1fr);gap:26px}
+  .dir-grid{grid-template-columns:420px 1fr;gap:90px;align-items:center}
+  .gal{grid-template-columns:repeat(4,1fr)}
+  .faq .wrap{display:grid;grid-template-columns:300px 1fr;gap:60px}
+  .acc-grid{grid-template-columns:1.1fr 1fr;gap:64px;align-items:start}
+  .map{aspect-ratio:1/1}
+  .res-grid{grid-template-columns:1.2fr 1fr 1fr}
+  .foot{grid-template-columns:1.4fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div class="demo-bar">ホームページの見本です（架空の店舗）｜制作 <a href="../../index.html">ネオリアリズム</a></div>
+
+<header id="hd">
+  <div class="wrap head">
+    <a class="logo" href="#top"><b>こもれび整体院</b><small>KOMOREBI SEITAI</small></a>
+    <nav class="gnav">
+      <a href="#concept">当院について</a><a href="#flow">初回の流れ</a><a href="#menu">料金</a><a href="#voice">お客様の声</a><a href="#access">アクセス</a>
+    </nav>
+    <div class="head-cta">
+      <div class="head-tel">0422-00-0000<small>受付 10:00–20:00（水・日 休）</small></div>
+      <a class="btn sm" href="#reserve">Web予約</a>
+    </div>
+    <button class="burger" aria-label="メニュー" onclick="document.body.classList.toggle('open')"><i></i></button>
+  </div>
+</header>
+<div class="drawer" onclick="if(event.target.closest('a'))document.body.classList.remove('open')">
+  <a class="m" href="#concept">当院について<span class="en">CONCEPT</span></a>
+  <a class="m" href="#flow">初回の流れ<span class="en">FLOW</span></a>
+  <a class="m" href="#menu">メニュー・料金<span class="en">MENU</span></a>
+  <a class="m" href="#voice">お客様の声<span class="en">VOICE</span></a>
+  <a class="m" href="#faq">よくある質問<span class="en">Q&amp;A</span></a>
+  <a class="m" href="#access">アクセス・受付時間<span class="en">ACCESS</span></a>
+  <a class="btn" href="#reserve">Webで予約する</a>
+</div>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="hero-bg"><img src="https://images.unsplash.com/photo-1589271243958-d61e12b61b97?auto=format&fit=crop&w=2000&q=75" alt="枝ものを生けた静かな施術室"></div>
+  <p class="vertical">吉祥寺の、ちいさな整体院</p>
+  <div class="wrap hero-in">
+    <p class="place rv in">吉祥寺駅 北口より徒歩4分</p>
+    <h1 class="rv in">からだの声を、<br>ゆっくり聴く。</h1>
+    <p class="lead rv in d1">はじめに20分、お話をうかがいます。姿勢と動きを一緒に確かめてから、あなたに合わせた施術へ。完全予約制・1対1の整体院です。</p>
+    <div class="cta rv in d2">
+      <a class="btn" href="#reserve">空き状況を見て予約する</a>
+      <a class="btn line" href="#flow">初回の流れ</a>
+    </div>
+    <div class="hero-info rv in d3">
+      <div><b>完全予約制</b>お待たせしません</div>
+      <div><b>平日20時まで</b>お仕事帰りに</div>
+      <div><b>個室・1対1</b>お子さま連れも</div>
+    </div>
+  </div>
+</section>
+
+<div class="news">
+  <div class="wrap"><span class="tag">NEWS</span><time>2026.11.01</time><a href="#access">年末年始の受付について（12/30〜1/3 休診）</a></div>
+</div>
+
+<section id="concept" class="concept">
+  <div class="wrap concept-grid">
+    <div class="photos rv">
+      <div class="p1"><img loading="lazy" src="https://images.unsplash.com/photo-1768507423533-b87b62769758?auto=format&fit=crop&w=1000&q=75" alt="背中に手を当てる施術の様子"></div>
+      <div class="p2"><img loading="lazy" src="https://images.unsplash.com/photo-1700142360825-d21edc53c8db?auto=format&fit=crop&w=700&q=75" alt="施術室"></div>
+      <span class="cap">Since 2019</span>
+    </div>
+    <div class="rv d1">
+      <span class="num">Concept</span>
+      <h2>「とりあえず揉む」を、<br>しない整体院です。</h2>
+      <p>つらい場所と、負担がかかっている場所は、同じとは限りません。だから当院は、ベッドに横になっていただく前に、まず座ってお話を聞きます。</p>
+      <p>いつから、どんなときに、どのくらい。お仕事の姿勢や、ふだんの過ごし方。うかがった内容と、実際のからだの動きを照らし合わせて、その日の施術を決めていきます。</p>
+      <p>施術のあとは、今日何をしたのかを言葉でお伝えします。「何をされたのか分からない」まま帰ることのない院でありたいと考えています。</p>
+      <p class="sign">院長<b>木下 まこと</b></p>
+    </div>
+  </div>
+</section>
+
+<section class="points">
+  <div class="wrap">
+    <div class="ttl rv"><span class="en">Our Policy</span><h2>当院の、3つの約束</h2></div>
+    <div class="pt-grid">
+      <article class="pt rv">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1763982811968-14e8aba3be09?auto=format&fit=crop&w=900&q=75" alt="手を取って話を聞く様子"></div>
+        <span class="n">01</span>
+        <h3>最初の20分は、<br>お話を聞く時間です</h3>
+        <p>初回は施術の前に、じっくり聞き取りをします。うまく説明できなくて大丈夫です。こちらから順番におたずねします。</p>
+      </article>
+      <article class="pt rv d1">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1630835425197-50feeba99ecd?auto=format&fit=crop&w=900&q=75" alt="自然光の入る個室の施術室"></div>
+        <span class="n">02</span>
+        <h3>はじめから終わりまで、<br>個室で1対1</h3>
+        <p>ほかのお客様と顔を合わせることはありません。お子さま連れの方も、ベビーカーのままお入りいただけます。</p>
+      </article>
+      <article class="pt rv d2">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1773332611528-566f16120979?auto=format&fit=crop&w=900&q=75" alt="自宅でストレッチをする様子"></div>
+        <span class="n">03</span>
+        <h3>回数券は売りません。<br>家でできることを1つ</h3>
+        <p>通う回数はご自身で決めていただけます。毎回、ご自宅で続けやすい体操を1つだけお伝えします。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="worry">
+  <div class="wrap">
+    <div class="ttl c rv"><span class="en">For You</span><h2>こんなお悩みで、<br>来院されています</h2></div>
+    <ul class="chips rv d1">
+      <li>デスクワークで、夕方になると肩と首が重い</li>
+      <li>朝、起き上がるときに腰がこわばる</li>
+      <li>猫背・反り腰など、姿勢が気になっている</li>
+      <li>産後、からだのバランスが変わった気がする</li>
+      <li>運動を再開する前に、状態を見てほしい</li>
+      <li>強く押されるのが苦手で、やさしい施術を探している</li>
+    </ul>
+    <p class="after rv d2">ひとつでも当てはまる方は、<br>まずは初回コースでご相談ください。</p>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap">
+    <div class="ttl rv"><span class="en">Flow</span><h2>初回の流れ</h2><p>はじめての方は約70分。説明の時間を多めにお取りしています。</p></div>
+    <ol class="flow">
+      <li class="rv"><h3>お話を聞く<span>約20分</span></h3><p>いつから、どんなときに気になるか。お仕事や生活の様子もうかがいます。</p></li>
+      <li class="rv d1"><h3>姿勢と動きの確認<span>約10分</span></h3><p>立ち方・座り方・関節の動きを一緒に確かめ、今日の方針をお伝えします。</p></li>
+      <li class="rv d2"><h3>施術<span>約30分</span></h3><p>強さはその都度うかがいます。痛みをがまんする必要はありません。</p></li>
+      <li class="rv d3"><h3>ご説明<span>約10分</span></h3><p>今日おこなったことと、ご自宅でできる体操を1つお伝えします。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="ttl rv"><span class="en">Menu &amp; Price</span><h2>メニュー・料金</h2><p>表示はすべて税込です。指名料・追加料金はいただきません。</p></div>
+    <div class="menu-grid">
+      <a class="first rv" href="#reserve">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1100&q=75" alt="背中の施術">
+        <div class="in">
+          <span class="badge">はじめての方へ</span>
+          <h3>初回コース（約70分）</h3>
+          <p style="font-size:13px;opacity:.9">聞き取り・姿勢と動きの確認・施術・ご説明</p>
+          <p class="pr"><s>7,700</s>5,500<small>円（税込）</small></p>
+        </div>
+      </a>
+      <div class="rv d1">
+        <ul class="plist">
+          <li><div class="row"><h3>全身整体 50分</h3><span class="dots"></span><span class="yen">6,600<small>円</small></span></div><p>2回目以降の基本のコースです。</p></li>
+          <li><div class="row"><h3>全身整体 80分</h3><span class="dots"></span><span class="yen">9,900<small>円</small></span></div><p>気になる所が複数ある方、ゆっくり受けたい方に。</p></li>
+          <li><div class="row"><h3>部分整体 30分</h3><span class="dots"></span><span class="yen">4,400<small>円</small></span></div><p>肩まわり・腰まわりなど、1か所を中心に。</p></li>
+          <li><div class="row"><h3>産後ケア 50分</h3><span class="dots"></span><span class="yen">6,600<small>円</small></span></div><p>産後2か月からご利用いただけます。お子さま同伴可。</p></li>
+        </ul>
+        <p class="fine">お支払いは現金・各種クレジットカード・QR決済をご利用いただけます。<br>ご予約の変更・キャンセルは、前日20時までにご連絡ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="voice">
+  <div class="wrap">
+    <div class="ttl c rv"><span class="en">Voice</span><h2>お客様の声</h2></div>
+    <div class="voices">
+      <article class="voice rv"><h3>最初にしっかり話を聞いてもらえて、安心しました。</h3><p>どこへ行けばよいか分からず、初めての整体でした。施術の前に図を使って説明してもらえたので、不安なく受けられました。</p><div class="who"><span>40代・会社員</span><span>初回コース</span></div></article>
+      <article class="voice rv d1"><h3>子ども連れで通える所を探していました。</h3><p>個室なので、子どもが声を出しても気になりません。毎回1つだけ教えてもらえる体操が、続けやすくて助かっています。</p><div class="who"><span>30代・育児中</span><span>産後ケア</span></div></article>
+      <article class="voice rv d2"><h3>無理に次の予約を勧められないのがいい。</h3><p>「次は気になったときで大丈夫ですよ」と言ってもらえます。自分のペースで、月に1度ほど通っています。</p><div class="who"><span>50代・自営業</span><span>全身整体 50分</span></div></article>
+    </div>
+    <p class="voice-note">※ 個人の感想です。見本サイトのため、文は例文です。</p>
+  </div>
+</section>
+
+<section class="director">
+  <div class="wrap dir-grid">
+    <div class="dir-ph rv"><img loading="lazy" src="https://images.unsplash.com/photo-1775765478818-e1ba68e1e136?auto=format&fit=crop&w=900&q=75" alt="掛け軸と花を飾った待合"></div>
+    <div class="rv d1">
+      <div class="ttl" style="margin-bottom:24px"><span class="en">Director</span><h2>院長あいさつ</h2></div>
+      <p>「病院では異常なしと言われたけれど、つらさは続いている」。そんなご相談を多くいただきます。当院でできること、できないことを最初に正直にお伝えし、必要なときは医療機関の受診をおすすめしています。</p>
+      <p style="margin-top:1.2em">分からないことは、施術の途中でも遠慮なく聞いてください。</p>
+      <p class="sign">院長<b>木下 まこと</b></p>
+      <dl class="bio">
+        <div><dt>2007年</dt><dd>都内の整体院に勤務</dd></div>
+        <div><dt>2014年</dt><dd>同院 院長</dd></div>
+        <div><dt>2019年</dt><dd>吉祥寺に こもれび整体院 を開院</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<div class="gal">
+  <div class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1706353399656-210cca727a33?auto=format&fit=crop&w=700&h=700&q=70" alt="施術の様子"></div>
+  <div class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1645005512968-0c1fe99f0093?auto=format&fit=crop&w=700&h=700&q=70" alt="肩の動きの確認"></div>
+  <div class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&h=700&q=70" alt="タオルとケア用品"></div>
+  <div class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=700&h=700&q=70" alt="肩まわりの施術"></div>
+</div>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="ttl rv"><span class="en">Q &amp; A</span><h2>よくある質問</h2></div>
+    <div class="rv d1">
+      <details open><summary>どんな服装で行けばよいですか？</summary><p>動きやすい服装でお越しください。お仕事帰りの方には、上下のお着替えを無料でお貸ししています。</p></details>
+      <details><summary>どのくらいの間隔で通えばよいですか？</summary><p>初回のあとに目安をお伝えしますが、通う回数はご自身で決めていただけます。回数券の販売はしていません。</p></details>
+      <details><summary>保険は使えますか？</summary><p>当院は自費の施術のみです。健康保険はお使いいただけません。</p></details>
+      <details><summary>施術は痛くないですか？</summary><p>強く押したり、関節を鳴らしたりする施術はおこないません。強さは途中で何度でも変えられます。</p></details>
+      <details><summary>子どもを連れて行けますか？</summary><p>はい。個室ですので、ベビーカーのままお入りいただけます。ご予約の際にお知らせください。</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="access" class="access">
+  <div class="wrap">
+    <div class="ttl rv"><span class="en">Access</span><h2>アクセス・受付時間</h2></div>
+    <div class="acc-grid">
+      <div class="map rv"><iframe loading="lazy" title="地図" src="https://www.google.com/maps?q=%E5%90%89%E7%A5%A5%E5%AF%BA%E9%A7%85&z=16&hl=ja&output=embed"></iframe></div>
+      <div class="rv d1">
+        <table class="info">
+          <tr><th>住所</th><td>〒180-0004 東京都武蔵野市吉祥寺本町 0-0-0 こもれびビル2階</td></tr>
+          <tr><th>最寄り駅</th><td>JR・京王井の頭線「吉祥寺駅」北口より徒歩4分</td></tr>
+          <tr><th>電話</th><td>0422-00-0000</td></tr>
+          <tr><th>駐車場</th><td>なし（となりにコインパーキングがあります）</td></tr>
+        </table>
+        <table class="hours">
+          <thead><tr><th style="text-align:left">受付時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th></tr></thead>
+          <tbody>
+            <tr><th>10:00 – 13:00</th><td class="o">●</td><td class="o">●</td><td class="x">－</td><td class="o">●</td><td class="o">●</td><td class="o">●</td><td class="x">－</td></tr>
+            <tr><th>15:00 – 20:00</th><td class="o">●</td><td class="o">●</td><td class="x">－</td><td class="o">●</td><td class="o">●</td><td class="o">▲</td><td class="x">－</td></tr>
+          </tbody>
+        </table>
+        <p class="hours-note">▲ 土曜の午後は17:00まで／休診日：水曜・日曜・祝日</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reserve" class="reserve">
+  <div class="bg"><img loading="lazy" src="https://images.unsplash.com/photo-1630835425197-50feeba99ecd?auto=format&fit=crop&w=1800&q=70" alt=""></div>
+  <div class="wrap">
+    <div class="ttl c rv"><span class="en">Reservation</span><h2>ご予約・お問い合わせ</h2><p>Web予約は24時間受け付けています。当日のご予約はお電話が確実です。</p></div>
+    <div class="res-grid rv d1">
+      <a class="res main" href="#reserve"><small>24時間受付</small><b>Webで予約する</b></a>
+      <a class="res" href="#reserve"><small>お電話</small><b>0422-00-0000</b></a>
+      <a class="res" href="#reserve"><small>LINEで相談</small><b>@komorebi</b></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="#top"><b>こもれび整体院</b><small>KOMOREBI SEITAI</small></a>
+        <p>〒180-0004 東京都武蔵野市吉祥寺本町 0-0-0 こもれびビル2階<br>吉祥寺駅 北口より徒歩4分</p>
+      </div>
+      <nav><a href="#concept">当院について</a><a href="#flow">初回の流れ</a><a href="#menu">メニュー・料金</a><a href="#voice">お客様の声</a><a href="#faq">よくある質問</a><a href="#access">アクセス</a></nav>
+      <div><p>受付 10:00–13:00 / 15:00–20:00<br>休診 水曜・日曜・祝日</p></div>
+    </div>
+    <div class="copy"><span>© Komorebi Seitai</span><span>このサイトは見本です。店舗・人物・連絡先はすべて架空のものです。写真：Unsplash</span></div>
+  </div>
+</footer>
+
+<div class="bottom">
+  <a href="#reserve">電話する<small>10:00–20:00</small></a>
+  <a class="r" href="#reserve">Webで予約する<small>24時間受付</small></a>
+</div>
+
+<script>
+const hd=document.getElementById('hd');
+const onS=()=>hd.classList.toggle('solid',scrollY>60);
+addEventListener('scroll',onS,{passive:true});onS();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv:not(.in)').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

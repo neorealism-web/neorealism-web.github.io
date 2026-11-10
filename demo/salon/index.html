@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>LUMIÈRE | AI Hair Salon — 表参道（見本サイト）</title>
+  <meta name="description" content="AI技術と確かな技術力で、あなただけのヘアスタイルをご提案。表参道の隠れ家的ヘアサロン LUMIÈRE">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>/* 見本用の調整：見出しが5行に折れて画面からはみ出すのを防ぐ */
+  .hero-title{font-size:clamp(2.3rem,4.6vw,4.4rem)!important;line-height:1.35!important}
+  .hero-title .line{white-space:nowrap}</style>
+</head>
+<body>
+<div style="position:fixed;left:12px;bottom:12px;z-index:9999;background:rgba(20,18,15,.92);color:#f1ebdd;border:1px solid #c9a96a;font:12px/1.6 'Noto Sans JP',sans-serif;padding:6px 12px;border-radius:999px">見本サイト（架空の店舗）｜制作：<a href="../../index.html" style="color:#c9a96a">ネオリアリズム</a></div>
+
+<!-- ══════════════════════════════════
+     NAVIGATION
+══════════════════════════════════ -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">LUM<span>I</span>ÈRE</a>
+    <ul class="nav-links">
+      <li><a href="#concept">コンセプト</a></li>
+      <li><a href="#services">メニュー</a></li>
+      <li><a href="#ai-diagnosis">AI診断</a></li>
+      <li><a href="#stylists">スタイリスト</a></li>
+      <li><a href="#gallery">ギャラリー</a></li>
+      <li><a href="#access">アクセス</a></li>
+    </ul>
+    <a href="#reservation" class="btn btn-primary nav-cta"><span>ご予約</span></a>
+    <button class="nav-hamburger" id="hamburger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="nav-mobile">
+  <a href="#concept">コンセプト</a>
+  <a href="#services">メニュー</a>
+  <a href="#ai-diagnosis">AI診断</a>
+  <a href="#stylists">スタイリスト</a>
+  <a href="#gallery">ギャラリー</a>
+  <a href="#testimonials">お客様の声</a>
+  <a href="#reservation">ご予約</a>
+  <a href="#access">アクセス</a>
+</div>
+
+
+<!-- ══════════════════════════════════
+     HERO
+══════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg-image">
+    <img src="https://images.unsplash.com/photo-1554519934-e32b1629d9ee?auto=format&fit=crop&w=1600&q=80" alt="" aria-hidden="true">
+  </div>
+  <div class="container hero-content">
+    <div class="hero-badge">AI Hair Consultation</div>
+    <h1 class="hero-title">
+      <span class="line">あなただけの</span>
+      <span class="line">美しさ</span>
+      <span class="line">を、AIが導く。</span>
+    </h1>
+    <p class="hero-sub">
+      最先端のAI診断と、熟練スタイリストの感性。<br>
+      ふたつが融合することで、あなたに最もふさわしい<br>
+      スタイルが生まれます。
+    </p>
+    <div class="hero-actions">
+      <a href="#reservation" class="btn btn-primary"><span>予約する</span></a>
+      <a href="#ai-diagnosis" class="btn btn-outline"><span>AI診断を試す</span></a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-orb">
+      <div class="hero-orb-ring"></div>
+      <div class="hero-orb-ring"></div>
+      <div class="hero-orb-ring"></div>
+      <div class="hero-orb-core">
+        <div class="hero-orb-text">光 と<br>美</div>
+      </div>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">98%</span>
+      <span class="hero-stat-label">顧客満足度</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">2,400+</span>
+      <span class="hero-stat-label">AI診断実績</span>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════
+     CONCEPT
+══════════════════════════════════ -->
+<section id="concept" class="section">
+  <div class="container">
+    <div class="concept-grid">
+      <div class="concept-visual" data-reveal="left">
+        <div class="concept-card">
+          <div class="concept-card-text">elegance</div>
+        </div>
+        <div class="concept-card">
+          <div class="concept-card-text">precision</div>
+        </div>
+        <div class="concept-accent-line"></div>
+      </div>
+
+      <div class="concept-text" data-reveal="right">
+        <span class="section-label">Our Philosophy</span>
+        <span class="gold-line"></span>
+        <h2 class="section-title">AIと感性が<br><em>出会う場所</em></h2>
+        <p class="section-subtitle">
+          テクノロジーは、あなたの個性を深く理解するための道具。
+          AIが最適なスタイルを提案し、スタイリストがその先の美を創り出す。
+          LUMIÈRE は、科学と芸術が溶け合う場所です。
+        </p>
+        <div class="concept-features" data-stagger>
+          <div class="concept-feature">
+            <div class="concept-feature-icon">✦</div>
+            <div class="concept-feature-body">
+              <h4>AI パーソナライズ診断</h4>
+              <p>顔型・髪質・ライフスタイルを分析し、あなたに最も似合うスタイルをAIが導き出します。</p>
+            </div>
+          </div>
+          <div class="concept-feature">
+            <div class="concept-feature-icon">✦</div>
+            <div class="concept-feature-body">
+              <h4>プレミアムケア素材</h4>
+              <p>国内外から厳選したトリートメント・カラー剤を使用。髪の美しさと健康を両立します。</p>
+            </div>
+          </div>
+          <div class="concept-feature">
+            <div class="concept-feature-icon">✦</div>
+            <div class="concept-feature-body">
+              <h4>完全プライベート空間</h4>
+              <p>ゆったりとした半個室でお迎えします。くつろぎながら、次のスタイルへの旅を。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════
+     SERVICES
+══════════════════════════════════ -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="services-header">
+      <div data-reveal="up">
+        <span class="section-label">Menu &amp; Price</span>
+        <span class="gold-line"></span>
+        <h2 class="section-title">メニュー</h2>
+      </div>
+      <p class="section-subtitle" data-reveal="right" style="text-align:right; max-width:38ch">
+        すべてのメニューはカウンセリング込み。<br>AIによる最適なプランをご提案します。
+      </p>
+    </div>
+
+    <div class="services-grid" data-stagger>
+      <div class="service-card">
+        <span class="service-number">01</span>
+        <span class="service-icon">✂</span>
+        <h3>カット</h3>
+        <p>骨格・顔型・髪質を丁寧に分析し、AI診断に基づいた最適なカットラインをご提案。あなたの個性を最大限に引き出します。</p>
+        <div class="service-price">
+          <span class="service-price-from">from</span>
+          <span class="service-price-num">8,800</span>
+          <span class="service-price-unit">円〜</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="service-number">02</span>
+        <span class="service-icon">◈</span>
+        <h3>カラー</h3>
+        <p>肌色・瞳の色に合わせたパーソナルカラー分析をAIが実施。ダメージを最小限に抑えながら、理想の発色を実現します。</p>
+        <div class="service-price">
+          <span class="service-price-from">from</span>
+          <span class="service-price-num">12,100</span>
+          <span class="service-price-unit">円〜</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="service-number">03</span>
+        <span class="service-icon">◯</span>
+        <h3>パーマ</h3>
+        <p>デジタルパーマからケアパーマまで、髪質に合わせた施術を選択。自然でサステナブルなウェーブを長期間キープします。</p>
+        <div class="service-price">
+          <span class="service-price-from">from</span>
+          <span class="service-price-num">16,500</span>
+          <span class="service-price-unit">円〜</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="service-number">04</span>
+        <span class="service-icon">♡</span>
+        <h3>トリートメント</h3>
+        <p>AI解析による髪の状態診断から、最適なケアプログラムをご提案。内部補修から毛先のコーティングまで、髪を深部から蘇らせます。</p>
+        <div class="service-price">
+          <span class="service-price-from">from</span>
+          <span class="service-price-num">6,600</span>
+          <span class="service-price-unit">円〜</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="service-number">05</span>
+        <span class="service-icon">✦</span>
+        <h3>AIトータルプラン</h3>
+        <p>診断から施術まですべてをAIがコーディネート。カット＋カラー＋トリートメントをまとめてお得にご提供するプレミアムプランです。</p>
+        <div class="service-price">
+          <span class="service-price-from">from</span>
+          <span class="service-price-num">28,600</span>
+          <span class="service-price-unit">円〜</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="service-number">06</span>
+        <span class="service-icon">◇</span>
+        <h3>ヘッドスパ</h3>
+        <p>頭皮の状態をAIが分析し、その日の頭皮に合わせたブレンドで施術。心まで解きほぐす、プレミアムなリラクゼーション体験。</p>
+        <div class="service-price">
+          <span class="service-price-from">from</span>
+          <span class="service-price-num">9,900</span>
+          <span class="service-price-unit">円〜</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════
+     AI DIAGNOSIS
+══════════════════════════════════ -->
+<section id="ai-diagnosis" class="section">
+  <div class="container">
+    <div class="ai-header" data-reveal="up">
+      <span class="section-label">AI Hair Diagnosis</span>
+      <span class="gold-line" style="margin-inline:auto"></span>
+      <h2 class="section-title">AIヘアスタイル診断</h2>
+      <p class="section-subtitle">
+        3つの質問に答えるだけで、あなたに最もふさわしいヘアスタイルをAIがご提案します。
+      </p>
+    </div>
+
+    <div class="quiz-wrapper">
+      <!-- Start screen -->
+      <div class="quiz-start" id="quizStart">
+        <span class="quiz-start-icon">◈</span>
+        <h3>あなたに合うスタイルを<br>見つけましょう</h3>
+        <p>顔型・髪のお悩み・好みのスタイルをお聞きします。所要時間は約1分です。</p>
+        <button class="btn btn-primary" id="quizStartBtn"><span>診断をはじめる</span></button>
+      </div>
+
+      <!-- Progress -->
+      <div class="quiz-progress" id="quizProgress" style="display:none">
+        <div class="quiz-progress-bar-bg">
+          <div class="quiz-progress-bar" id="quizProgressBar"></div>
+        </div>
+        <span class="quiz-progress-text" id="quizProgressText">STEP 1 / 3</span>
+      </div>
+
+      <!-- Step 1: Face shape -->
+      <div class="quiz-step" id="quizStep1">
+        <span class="quiz-step-label">Step 01 — 顔の形</span>
+        <h3>あなたの顔型を<br>選んでください</h3>
+        <div class="quiz-options" data-stagger>
+          <button class="quiz-option" data-step="1" data-value="oval">
+            <span class="quiz-option-icon">◉</span>
+            <h4>卵型</h4>
+            <p>おでこが少し広く、あごに向かってなだらかに細くなる理想的な輪郭</p>
+          </button>
+          <button class="quiz-option" data-step="1" data-value="round">
+            <span class="quiz-option-icon">◯</span>
+            <h4>丸型</h4>
+            <p>顔の横幅と縦幅がほぼ同じで、頬の丸みが特徴的な輪郭</p>
+          </button>
+          <button class="quiz-option" data-step="1" data-value="long">
+            <span class="quiz-option-icon">◻</span>
+            <h4>面長</h4>
+            <p>縦のラインが長く、額から顎にかけてすっきりとした輪郭</p>
+          </button>
+          <button class="quiz-option" data-step="1" data-value="square">
+            <span class="quiz-option-icon">▣</span>
+            <h4>四角型</h4>
+            <p>顎のラインがはっきりとしたシャープで力強い輪郭</p>
+          </button>
+        </div>
+        <div class="quiz-nav">
+          <button class="quiz-btn-back hidden" data-to="0">← 戻る</button>
+          <button class="btn btn-primary quiz-btn-next" data-from="1"><span>次へ進む</span></button>
+        </div>
+      </div>
+
+      <!-- Step 2: Concern -->
+      <div class="quiz-step" id="quizStep2">
+        <span class="quiz-step-label">Step 02 — 髪のお悩み</span>
+        <h3>髪のお悩みを<br>選んでください</h3>
+        <div class="quiz-options" data-stagger>
+          <button class="quiz-option" data-step="2" data-value="volume">
+            <span class="quiz-option-icon">↑</span>
+            <h4>ボリュームが出ない</h4>
+            <p>根元がぺたっとして、ふんわり感がなかなか出ない</p>
+          </button>
+          <button class="quiz-option" data-step="2" data-value="curly">
+            <span class="quiz-option-icon">∿</span>
+            <h4>くせ毛・うねり</h4>
+            <p>湿気でくせが出たり、まとまりにくいと感じる</p>
+          </button>
+          <button class="quiz-option" data-step="2" data-value="damage">
+            <span class="quiz-option-icon">◈</span>
+            <h4>ダメージが気になる</h4>
+            <p>カラーやパーマで傷んでいる、パサつきが気になる</p>
+          </button>
+          <button class="quiz-option" data-step="2" data-value="thin">
+            <span class="quiz-option-icon">·</span>
+            <h4>髪が細い・少ない</h4>
+            <p>ハリやコシが感じられず、スタイルがすぐに崩れてしまう</p>
+          </button>
+        </div>
+        <div class="quiz-nav">
+          <button class="quiz-btn-back" data-to="1">← 戻る</button>
+          <button class="btn btn-primary quiz-btn-next" data-from="2"><span>次へ進む</span></button>
+        </div>
+      </div>
+
+      <!-- Step 3: Style -->
+      <div class="quiz-step" id="quizStep3">
+        <span class="quiz-step-label">Step 03 — 好みのスタイル</span>
+        <h3>理想のイメージを<br>選んでください</h3>
+        <div class="quiz-options" data-stagger>
+          <button class="quiz-option" data-step="3" data-value="natural">
+            <span class="quiz-option-icon">☽</span>
+            <h4>ナチュラル</h4>
+            <p>肩の力が抜けた、自然体でいられるリラックスしたスタイル</p>
+          </button>
+          <button class="quiz-option" data-step="3" data-value="cool">
+            <span class="quiz-option-icon">◆</span>
+            <h4>クール</h4>
+            <p>都会的でシャープ、凛とした知性を感じさせるスタイル</p>
+          </button>
+          <button class="quiz-option" data-step="3" data-value="feminine">
+            <span class="quiz-option-icon">✿</span>
+            <h4>フェミニン</h4>
+            <p>柔らかく可愛らしい、女性らしさが際立つ上品なスタイル</p>
+          </button>
+          <button class="quiz-option" data-step="3" data-value="trendy">
+            <span class="quiz-option-icon">★</span>
+            <h4>トレンド重視</h4>
+            <p>今シーズンの最旬スタイルで、旬な印象を取り入れたい</p>
+          </button>
+        </div>
+        <div class="quiz-nav">
+          <button class="quiz-btn-back" data-to="2">← 戻る</button>
+          <button class="btn btn-primary quiz-btn-next" data-from="3"><span>診断結果を見る</span></button>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="quiz-result" id="quizResult">
+        <div class="result-card">
+          <div class="result-card-top">
+            <div class="result-gradient" id="resultGradient"></div>
+            <div class="result-card-top-content">
+              <span class="result-tag">AI おすすめスタイル</span>
+              <h2 class="result-style-name" id="resultStyleName"></h2>
+            </div>
+          </div>
+          <div class="result-card-body">
+            <p class="result-desc" id="resultDesc"></p>
+            <div class="result-features" id="resultFeatures"></div>
+            <div class="result-menu">
+              <span class="result-menu-label">おすすめメニュー</span>
+              <span class="result-menu-text" id="resultMenu"></span>
+            </div>
+            <div class="result-actions">
+              <a href="#reservation" class="btn btn-primary"><span>このスタイルで予約する</span></a>
+              <button class="quiz-restart" id="quizRestart">もう一度診断する</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /quiz-wrapper -->
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════
+     STYLISTS
+══════════════════════════════════ -->
+<section id="stylists" class="section">
+  <div class="container">
+    <div data-reveal="up" style="margin-bottom:1rem">
+      <span class="section-label">Our Stylists</span>
+      <span class="gold-line"></span>
+      <h2 class="section-title">スタイリスト</h2>
+    </div>
+
+    <div class="stylists-grid" data-stagger>
+      <div class="stylist-card">
+        <div class="stylist-photo">
+          <img class="stylist-img" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="桐島 あかり" loading="lazy">
+          <div class="stylist-photo-bg"></div>
+          <div class="stylist-silhouette"></div>
+          <span class="stylist-role">Top Stylist</span>
+        </div>
+        <div class="stylist-info">
+          <h3>桐島 あかり</h3>
+          <span class="stylist-name-en">Akari Kirishima</span>
+          <p>パリ・ロンドンでの研修を経て帰国。欧州トレンドと日本の繊細な技術を融合させたスタイリングが得意。カラーデザインで数多くの賞を受賞。</p>
+          <div class="stylist-tags">
+            <span class="stylist-tag">カラー</span>
+            <span class="stylist-tag">ロング</span>
+            <span class="stylist-tag">トレンド</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stylist-card">
+        <div class="stylist-photo">
+          <img class="stylist-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="黒川 拓海" loading="lazy">
+          <div class="stylist-photo-bg"></div>
+          <div class="stylist-silhouette"></div>
+          <span class="stylist-role">Senior Stylist</span>
+        </div>
+        <div class="stylist-info">
+          <h3>黒川 拓海</h3>
+          <span class="stylist-name-en">Takumi Kurokawa</span>
+          <p>骨格分析とAI診断のスペシャリスト。メンズスタイリングから女性のショートまで幅広く対応。論理的なアプローチで一人ひとりに最適解を。</p>
+          <div class="stylist-tags">
+            <span class="stylist-tag">ショート</span>
+            <span class="stylist-tag">AI診断</span>
+            <span class="stylist-tag">骨格分析</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stylist-card">
+        <div class="stylist-photo">
+          <img class="stylist-img" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=600&q=80" alt="松本 ゆい" loading="lazy">
+          <div class="stylist-photo-bg"></div>
+          <div class="stylist-silhouette"></div>
+          <span class="stylist-role">Stylist</span>
+        </div>
+        <div class="stylist-info">
+          <h3>松本 ゆい</h3>
+          <span class="stylist-name-en">Yui Matsumoto</span>
+          <p>パーマとトリートメントに特化したケアの専門家。傷んだ髪を美しく蘇らせることを得意とし、多くのリピーター客から絶大な信頼を得ている。</p>
+          <div class="stylist-tags">
+            <span class="stylist-tag">パーマ</span>
+            <span class="stylist-tag">ケア</span>
+            <span class="stylist-tag">くせ毛</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stylist-card">
+        <div class="stylist-photo">
+          <img class="stylist-img" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="伊藤 蓮" loading="lazy">
+          <div class="stylist-photo-bg"></div>
+          <div class="stylist-silhouette"></div>
+          <span class="stylist-role">Colorist</span>
+        </div>
+        <div class="stylist-info">
+          <h3>伊藤 蓮</h3>
+          <span class="stylist-name-en">Ren Ito</span>
+          <p>インターカラー・バレイヤージュを得意とするカラリスト。肌色に合わせたパーソナルカラー理論を軸に、思わず振り返る色づくりを提案。</p>
+          <div class="stylist-tags">
+            <span class="stylist-tag">バレイヤージュ</span>
+            <span class="stylist-tag">ハイライト</span>
+            <span class="stylist-tag">外国人風</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════
+     GALLERY
+══════════════════════════════════ -->
+<section id="gallery" class="section">
+  <div class="container">
+    <div class="gallery-header">
+      <div data-reveal="left">
+        <span class="section-label">Gallery</span>
+        <span class="gold-line"></span>
+        <h2 class="section-title">施術ギャラリー</h2>
+      </div>
+      <p class="section-subtitle" data-reveal="right" style="text-align:right; max-width:30ch">
+        LUMIÈRE で生まれた、それぞれのスタイル
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="エアリーロングレイヤー" loading="lazy">
+        <div class="gallery-bg"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">
+            <span class="gallery-style-name">エアリーロングレイヤー</span>
+            <span class="gallery-style-tag">Cut + Color</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="フレンチボブ" loading="lazy">
+        <div class="gallery-bg"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">
+            <span class="gallery-style-name">フレンチボブ</span>
+            <span class="gallery-style-tag">Cut + Balayage</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80" alt="コントラストカラー" loading="lazy">
+        <div class="gallery-bg"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">
+            <span class="gallery-style-name">コントラストカラー</span>
+            <span class="gallery-style-tag">Color</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80" alt="ナチュラルウェーブ" loading="lazy">
+        <div class="gallery-bg"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">
+            <span class="gallery-style-name">ナチュラルウェーブ</span>
+            <span class="gallery-style-tag">Cut + Perm</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="ウルフカット" loading="lazy">
+        <div class="gallery-bg"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">
+            <span class="gallery-style-name">ウルフカット</span>
+            <span class="gallery-style-tag">Cut + Highlight</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1540555700478-4be290a89051?auto=format&fit=crop&w=800&q=80" alt="プラチナカラー" loading="lazy">
+        <div class="gallery-bg"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">
+            <span class="gallery-style-name">プラチナカラー</span>
+            <span class="gallery-style-tag">Bleach + Color</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" alt="マッシュウルフ" loading="lazy">
+        <div class="gallery-bg"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">
+            <span class="gallery-style-name">マッシュウルフ</span>
+            <span class="gallery-style-tag">Cut</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=800&q=80" alt="バレイヤージュロング" loading="lazy">
+        <div class="gallery-bg"></div>
+        <div class="gallery-overlay">
+          <div class="gallery-overlay-text">
+            <span class="gallery-style-name">バレイヤージュロング</span>
+            <span class="gallery-style-tag">Color + Treatment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════ -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div data-reveal="up" style="margin-bottom:1rem">
+      <span class="section-label">Testimonials</span>
+      <span class="gold-line"></span>
+      <h2 class="section-title">お客様の声</h2>
+    </div>
+    <p class="section-subtitle" data-reveal="up" style="margin-bottom:4rem">
+      LUMIÈREを選んでくださったお客様からのご感想
+    </p>
+
+    <div class="testimonials-grid" data-stagger>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">&#8220;</div>
+        <p class="testimonial-text">AI診断で自分の顔型に合ったスタイルを提案してもらい、仕上がりに驚きました。今まで似合わないと思っていたショートが、こんなにも自分を引き立てるとは思っていませんでした。次回も必ずこちらにお願いしたいです。</p>
+        <div class="testimonial-stars">
+          <span>★★★★★</span>
+        </div>
+        <div class="testimonial-author">
+          <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="M.K様" loading="lazy">
+          <div>
+            <span class="testimonial-name">M.K 様</span>
+            <span class="testimonial-meta">30代 / フリーランス</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">&#8220;</div>
+        <p class="testimonial-text">半個室の空間で、プライベートな時間を過ごせるのが最高です。スタイリストさんとの会話も楽しく、カウンセリングがとても丁寧でした。バレイヤージュに挑戦しましたが、肌色に合わせてくれた色選びが完璧でした。</p>
+        <div class="testimonial-stars">
+          <span>★★★★★</span>
+        </div>
+        <div class="testimonial-author">
+          <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=100&q=80" alt="Y.T様" loading="lazy">
+          <div>
+            <span class="testimonial-name">Y.T 様</span>
+            <span class="testimonial-meta">20代 / 会社員</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">&#8220;</div>
+        <p class="testimonial-text">傷んだ髪を何とかしたくて訪問しました。トリートメントの効果が素晴らしく、サラサラになって驚いています。松本さんのくせ毛への知識が深く、悩みを的確に解消していただきました。リピート確定です。</p>
+        <div class="testimonial-stars">
+          <span>★★★★★</span>
+        </div>
+        <div class="testimonial-author">
+          <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?auto=format&fit=crop&w=100&q=80" alt="R.S様" loading="lazy">
+          <div>
+            <span class="testimonial-name">R.S 様</span>
+            <span class="testimonial-meta">40代 / 主婦</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════
+     FAQ
+══════════════════════════════════ -->
+<section id="faq" class="section section--alt">
+  <div class="container">
+    <div data-reveal="up" style="margin-bottom:1rem">
+      <span class="section-label">FAQ</span>
+      <span class="gold-line"></span>
+      <h2 class="section-title">よくある質問</h2>
+    </div>
+
+    <div class="faq-list" data-stagger>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>初めての来店でも大丈夫ですか？</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-answer">
+          <p>はい、もちろんです。初めてご来店のお客様には、必ず無料カウンセリングを実施しております。AI診断も無料でご利用いただけますので、ぜひお気軽にご来店ください。担当スタイリストが丁寧にヒアリングいたします。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>AI診断はどのくらいの精度ですか？</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-answer">
+          <p>顔型・髪質・ライフスタイルを総合的に分析し、2,400件以上の診断実績に基づいた提案を行います。ただし、最終的なスタイル決定は熟練スタイリストが直接お客様と対話しながら決定しますので、AI診断はあくまで「出発点」としてご活用ください。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>当日予約は可能ですか？</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-answer">
+          <p>空き状況によっては当日予約もお受けしております。お電話（03-1234-5678）にてお問い合わせいただくか、予約フォームよりご連絡ください。なお、担当スタイリストのご指名がある場合は、お早めのご予約をおすすめします。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>アレルギーがあっても施術できますか？</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-answer">
+          <p>ご来店前にお知らせいただければ、アレルギー対応の薬剤をご用意します。パッチテストも承っておりますので（要事前予約）、不安な方はお気軽にご相談ください。お客様の安全を最優先に対応いたします。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>子ども連れでも来店できますか？</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-answer">
+          <p>半個室の空間をご用意しておりますので、小さなお子様連れでも安心してご利用いただけます。お子様用のチェアもご用意しております。ただし混雑時はご迷惑をおかけする場合がございますので、事前にご相談いただくとスムーズです。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════
+     RESERVATION
+══════════════════════════════════ -->
+<section id="reservation" class="section">
+  <div class="container">
+    <div class="reservation-grid">
+      <div class="reservation-info" data-reveal="left">
+        <span class="section-label">Reservation</span>
+        <span class="gold-line"></span>
+        <h2 class="section-title">ご予約</h2>
+        <p class="section-subtitle">
+          ご予約後、担当スタイリストより確認のご連絡をお送りします。
+          AI診断結果をお持ちの方は、ぜひご予約時にお知らせください。
+        </p>
+        <div class="reservation-points">
+          <div class="reservation-point">
+            <span class="reservation-point-num">01</span>
+            <div class="reservation-point-body">
+              <h4>カウンセリング込み</h4>
+              <p>すべての施術に無料カウンセリングが含まれます。当日のご要望もお気軽にどうぞ。</p>
+            </div>
+          </div>
+          <div class="reservation-point">
+            <span class="reservation-point-num">02</span>
+            <div class="reservation-point-body">
+              <h4>当日キャンセル無料</h4>
+              <p>前日21時までのキャンセルは無料。ご都合が変わった際もお気軽にご連絡ください。</p>
+            </div>
+          </div>
+          <div class="reservation-point">
+            <span class="reservation-point-num">03</span>
+            <div class="reservation-point-body">
+              <h4>完全個室でくつろぎを</h4>
+              <p>半個室のプライベート空間でゆったりとした時間をお過ごしいただけます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-reveal="right">
+        <form class="reservation-form" id="reservationForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">お名前 <span style="color:var(--gold)">*</span></label>
+              <input type="text" id="name" name="name" placeholder="山田 花子" required>
+            </div>
+            <div class="form-group">
+              <label for="kana">フリガナ</label>
+              <input type="text" id="kana" name="kana" placeholder="ヤマダ ハナコ">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tel">電話番号 <span style="color:var(--gold)">*</span></label>
+              <input type="tel" id="tel" name="tel" placeholder="090-1234-5678" required>
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス <span style="color:var(--gold)">*</span></label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">ご希望日</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+              <label for="time">ご希望時間帯</label>
+              <select id="time" name="time">
+                <option value="">お選びください</option>
+                <option>10:00〜12:00</option>
+                <option>12:00〜14:00</option>
+                <option>14:00〜16:00</option>
+                <option>16:00〜18:00</option>
+                <option>18:00〜20:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="menu">ご希望メニュー</label>
+            <select id="menu" name="menu">
+              <option value="">お選びください</option>
+              <option>カット</option>
+              <option>カット + カラー</option>
+              <option>カット + パーマ</option>
+              <option>カット + トリートメント</option>
+              <option>AIトータルプラン</option>
+              <option>カラーのみ</option>
+              <option>ヘッドスパ</option>
+              <option>その他・ご相談</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="stylist">担当スタイリスト</label>
+            <select id="stylist" name="stylist">
+              <option value="">指名なし（おまかせ）</option>
+              <option>桐島 あかり</option>
+              <option>黒川 拓海</option>
+              <option>松本 ゆい</option>
+              <option>伊藤 蓮</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">ご要望・ご質問</label>
+            <textarea id="message" name="message" placeholder="AI診断結果・アレルギー情報・髪のお悩みなど、何でもお気軽にどうぞ"></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:1.1rem"><span>予約リクエストを送る</span></button>
+          </div>
+        </form>
+
+        <div class="form-thankyou" id="formThankyou">
+          <span class="form-thankyou-icon">✦</span>
+          <h3>ありがとうございます</h3>
+          <p>ご予約リクエストを受け付けました。担当スタイリストより24時間以内にご連絡いたします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════
+     ACCESS
+══════════════════════════════════ -->
+<section id="access" class="section">
+  <div class="container">
+    <div data-reveal="up">
+      <span class="section-label">Access</span>
+      <span class="gold-line"></span>
+      <h2 class="section-title">アクセス</h2>
+    </div>
+
+    <div class="access-grid">
+      <div class="access-info-block" data-stagger>
+        <div class="access-item">
+          <h4>住所</h4>
+          <p>〒107-0061<br>東京都港区北青山3-5-10<br>LUMIÈREビル 3F</p>
+        </div>
+        <div class="access-item">
+          <h4>電車でのアクセス</h4>
+          <p>東京メトロ銀座線・千代田線・半蔵門線<br>「表参道駅」A3出口より徒歩3分</p>
+        </div>
+        <div class="access-item">
+          <h4>営業時間</h4>
+          <p>平日 / 10:00 — 20:00<br>土日祝 / 9:00 — 20:00<br>定休日：毎週火曜日</p>
+        </div>
+        <div class="access-item">
+          <h4>お問い合わせ</h4>
+          <p>Tel. 03-1234-5678<br>info@lumiere-salon.jp</p>
+        </div>
+      </div>
+
+      <div class="access-map" data-reveal="right">
+        <div class="map-pin">
+          <div class="map-pin-dot"></div>
+          <span class="map-pin-label">LUMIÈRE 表参道</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">LUM<span>I</span>ÈRE</a>
+        <p>AIと人の感性が出会う、表参道の隠れ家的ヘアサロン。あなただけの美しさを、ともに見つけましょう。</p>
+      </div>
+      <div class="footer-col">
+        <h5>Menu</h5>
+        <ul>
+          <li><a href="#services">カット</a></li>
+          <li><a href="#services">カラー</a></li>
+          <li><a href="#services">パーマ</a></li>
+          <li><a href="#services">トリートメント</a></li>
+          <li><a href="#services">ヘッドスパ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Salon</h5>
+        <ul>
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#stylists">スタイリスト</a></li>
+          <li><a href="#gallery">ギャラリー</a></li>
+          <li><a href="#ai-diagnosis">AI診断</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Info</h5>
+        <ul>
+          <li><a href="#reservation">ご予約</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><a href="#">よくある質問</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 LUMIÈRE Hair Salon. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">LINE</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/quiz.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>おとのはピアノ教室｜世田谷区経堂・3歳から大人までの個人レッスン（見本サイト）</title>
+<meta name="description" content="経堂駅から徒歩6分。3歳から大人まで、ひとりずつの個人レッスンのピアノ教室です。（ホームページの見本・架空の教室）">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf6ec; --bg2:#f4ecdc; --card:#fff; --ink:#223052; --sub:#5f6a85;
+  --mustard:#e9b44c; --mustard-s:#fbeccb; --coral:#e2725b; --sage:#d5e3d6; --line:#e9dfcb;
+  --maru:"Zen Maru Gothic","Noto Sans JP",sans-serif; --en:"Josefin Sans",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;font-size:15px;line-height:2;letter-spacing:.03em;padding-bottom:70px;overflow-x:clip}
+html{overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.maru{font-family:var(--maru)}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.1s}.js .rv.d2{transition-delay:.2s}.js .rv.d3{transition-delay:.3s}
+
+.demo-bar{background:var(--ink);color:#cfd5e4;font-size:11px;text-align:center;padding:5px 10px}
+.demo-bar a{color:var(--mustard);text-decoration:underline}
+
+header{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.95);backdrop-filter:blur(10px);transition:box-shadow .3s}
+header.solid{box-shadow:0 1px 0 var(--line)}
+.head{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--maru);font-weight:700;font-size:18px;letter-spacing:.06em;line-height:1.3}
+.logo svg{width:38px;height:38px;flex:none}
+.logo small{display:block;font-family:var(--en);font-size:10px;letter-spacing:.22em;color:var(--coral);font-weight:600}
+.gnav{display:none;gap:28px;font-size:13.5px;font-weight:500}
+.gnav a{position:relative;padding:4px 0}
+.gnav a::after{content:"";position:absolute;left:50%;bottom:-4px;width:5px;height:5px;border-radius:50%;background:var(--coral);transform:translateX(-50%) scale(0);transition:.25s}
+.gnav a:hover::after{transform:translateX(-50%) scale(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--coral);color:#fff;font-family:var(--maru);font-weight:700;border-radius:999px;padding:16px 30px;font-size:15px;letter-spacing:.06em;border:0;cursor:pointer;transition:transform .25s,box-shadow .25s;box-shadow:0 6px 18px rgba(226,114,91,.3)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(226,114,91,.34)}
+.btn i{width:22px;height:22px;border-radius:50%;background:#fff;display:grid;place-items:center;font-style:normal;color:var(--coral);font-size:12px;line-height:1}
+.btn.w{background:#fff;color:var(--ink);box-shadow:0 4px 14px rgba(34,48,82,.08)}
+.btn.w i{background:var(--ink);color:#fff}
+.btn.sm{padding:10px 20px;font-size:13px}
+.head .btn{display:none}
+.burger{width:44px;height:44px;border:0;background:var(--ink);border-radius:50%;position:relative;cursor:pointer}
+.burger i,.burger i::before{content:"";position:absolute;left:13px;width:18px;height:2px;border-radius:2px;background:#fff;transition:.3s}
+.burger i{top:18px}.burger i::before{top:7px;left:0}
+.open .burger i{transform:translateY(3px) rotate(45deg)}.open .burger i::before{transform:translateY(-7px) rotate(-90deg)}
+.drawer{position:fixed;inset:0;z-index:45;background:var(--bg);padding:110px 30px 40px;opacity:0;pointer-events:none;transition:opacity .3s;overflow:auto}
+.open .drawer{opacity:1;pointer-events:auto}
+.drawer a.m{display:flex;justify-content:space-between;align-items:center;font-family:var(--maru);font-weight:700;font-size:19px;padding:15px 4px;border-bottom:2px dotted var(--line)}
+.drawer a.m span{font-family:var(--en);font-size:11px;letter-spacing:.2em;color:var(--coral)}
+.drawer .btn{width:100%;margin-top:28px}
+
+/* hero */
+.hero{position:relative;padding:26px 0 70px;overflow:clip}
+.hero-grid{display:grid;gap:36px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:5px 16px 5px 6px;font-size:12px;font-weight:500;box-shadow:0 2px 10px rgba(34,48,82,.06)}
+.pill b{background:var(--mustard);border-radius:999px;padding:0 10px;font-family:var(--en);font-size:11px;letter-spacing:.1em;line-height:2.1}
+.hero h1{font-family:var(--maru);font-weight:700;font-size:clamp(30px,8.2vw,52px);line-height:1.55;letter-spacing:.06em;margin:20px 0 18px}
+.hero h1 em{font-style:normal;position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:-2%;right:-2%;bottom:.08em;height:.36em;background:var(--mustard);border-radius:999px;z-index:-1;opacity:.75}
+.hero .lead{color:var(--sub);max-width:29em}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.stats{display:flex;gap:26px;margin-top:34px}
+.stats div{font-size:11.5px;color:var(--sub);line-height:1.6}
+.stats b{display:block;font-family:var(--en);font-weight:600;font-size:30px;color:var(--ink);line-height:1.2}
+.stats b small{font-family:var(--maru);font-size:13px;margin-left:2px}
+.hero-vis{position:relative;padding:0 0 40px 0}
+.hero-vis .main{aspect-ratio:5/6;border-radius:200px 200px 28px 28px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(34,48,82,.45)}
+.hero-vis .main img{width:100%;height:100%;object-fit:cover}
+.hero-vis .sub{position:absolute;left:-8px;bottom:0;width:40%;aspect-ratio:1/1;border-radius:50%;overflow:hidden;border:7px solid var(--bg)}
+.hero-vis .sub img{width:100%;height:100%;object-fit:cover}
+.stamp{position:absolute;right:-6px;top:36%;width:112px;height:112px;animation:spin 22s linear infinite}
+.stamp-c{position:absolute;right:-6px;top:36%;width:112px;height:112px;display:grid;place-items:center;font-size:30px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.blob{position:absolute;z-index:-1;border-radius:50%}
+.b1{width:300px;height:300px;background:var(--mustard-s);right:-120px;top:-40px}
+.b2{width:160px;height:160px;background:var(--sage);left:-70px;bottom:60px}
+
+.marquee{background:var(--ink);color:var(--bg);overflow:hidden;white-space:nowrap;padding:13px 0;font-family:var(--en);font-size:15px;letter-spacing:.24em;transform:rotate(-1.2deg) scale(1.03)}
+.marquee div{display:inline-block;animation:mq 34s linear infinite}
+.marquee span{color:var(--mustard);margin:0 20px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+section{padding:84px 0;position:relative}
+.ttl{margin-bottom:38px}
+.ttl .en{display:inline-flex;align-items:center;gap:10px;font-family:var(--en);font-weight:600;font-size:13px;letter-spacing:.24em;color:var(--coral)}
+.ttl .en::before{content:"♪";font-size:16px;letter-spacing:0}
+.ttl h2{font-family:var(--maru);font-weight:700;font-size:clamp(25px,6.2vw,38px);line-height:1.6;letter-spacing:.06em;margin-top:4px}
+.ttl p{color:var(--sub);margin-top:12px}
+.ttl.c{text-align:center}
+
+/* about */
+.about-grid{display:grid;gap:38px}
+.about-ph{position:relative}
+.about-ph .a1{aspect-ratio:4/3;border-radius:28px;overflow:hidden}
+.about-ph img{width:100%;height:100%;object-fit:cover}
+.about-ph .tag{position:absolute;right:14px;bottom:-18px;background:var(--mustard);font-family:var(--maru);font-weight:700;font-size:13px;line-height:1.6;padding:12px 20px;border-radius:18px;transform:rotate(3deg);box-shadow:0 8px 20px rgba(34,48,82,.12)}
+.about p+p{margin-top:1.1em}
+.about .hand{font-family:var(--maru);font-weight:700;font-size:17px;margin-top:22px}
+
+/* features */
+.feat{background:var(--bg2);border-radius:44px 44px 0 0}
+.f-grid{display:grid;gap:22px}
+.f{background:var(--card);border-radius:28px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.f:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(34,48,82,.3)}
+.f .ph{aspect-ratio:16/10;overflow:hidden}
+.f .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.f:hover .ph img{transform:scale(1.07)}
+.f .bd{padding:22px 24px 28px;position:relative}
+.f .n{position:absolute;right:22px;top:-26px;width:52px;height:52px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font-family:var(--en);font-weight:600;font-size:18px;border:4px solid #fff}
+.f h3{font-family:var(--maru);font-weight:700;font-size:19px;line-height:1.7;margin-bottom:8px}
+.f p{font-size:14px;color:var(--sub)}
+
+/* course */
+.course{background:var(--bg2);padding-top:20px}
+.c-grid{display:grid;gap:22px}
+.cs{background:var(--card);border-radius:28px;padding:14px 14px 26px;display:flex;flex-direction:column}
+.cs .ph{aspect-ratio:16/11;border-radius:18px;overflow:hidden;position:relative}
+.cs .ph img{width:100%;height:100%;object-fit:cover}
+.cs .age{position:absolute;left:12px;top:12px;background:#fff;border-radius:999px;font-size:12px;font-weight:700;padding:1px 14px}
+.cs .bd{padding:18px 12px 0;flex:1;display:flex;flex-direction:column}
+.cs h3{font-family:var(--maru);font-weight:700;font-size:22px}
+.cs .desc{font-size:13.5px;color:var(--sub);margin:4px 0 16px}
+.cs .fee{display:flex;align-items:baseline;gap:8px;padding:14px 0;border-top:2px dotted var(--line);border-bottom:2px dotted var(--line)}
+.cs .fee span{font-size:12px;background:var(--mustard-s);border-radius:6px;padding:0 8px;font-weight:500}
+.cs .fee b{font-family:var(--en);font-weight:600;font-size:36px;line-height:1.1;margin-left:auto}
+.cs .fee small{font-size:12px}
+.cs ul{list-style:none;margin:14px 0 0;padding:0;font-size:13.5px}
+.cs li{position:relative;padding-left:22px}
+.cs li::before{content:"";position:absolute;left:2px;top:.75em;width:10px;height:6px;border-left:2px solid var(--coral);border-bottom:2px solid var(--coral);transform:rotate(-45deg)}
+.fine{font-size:12.5px;color:var(--sub);margin-top:24px;background:#fff;border-radius:18px;padding:16px 20px;line-height:1.9}
+
+/* lesson flow */
+.lesson{background:var(--ink);color:#f3eee2;border-radius:0 0 44px 44px}
+.lesson .ttl p{color:#b8c0d6}
+.bar{display:grid;gap:12px}
+.seg{background:rgba(255,255,255,.07);border-radius:20px;padding:20px 22px;position:relative;overflow:hidden}
+.seg::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--mustard)}
+.seg:nth-child(2)::before{background:var(--coral)}.seg:nth-child(3)::before{background:#8fb7a0}.seg:nth-child(4)::before{background:#9db4e6}
+.seg .min{font-family:var(--en);font-weight:600;font-size:26px;line-height:1.2}
+.seg .min small{font-size:12px;margin-left:3px;font-family:var(--maru)}
+.seg h3{font-family:var(--maru);font-weight:700;font-size:17px;margin:2px 0 4px}
+.seg p{font-size:13px;color:#b8c0d6;line-height:1.8}
+
+/* year */
+.y-grid{display:grid;gap:14px}
+.y{display:grid;grid-template-columns:78px 1fr;gap:18px;align-items:center;background:var(--card);border-radius:22px;padding:16px 20px}
+.y .m{width:78px;height:78px;border-radius:50%;background:var(--mustard-s);display:grid;place-items:center;font-family:var(--en);font-weight:600;font-size:26px;line-height:1}
+.y .m small{font-family:var(--maru);font-size:12px}
+.y:nth-child(2) .m{background:var(--sage)}.y:nth-child(3) .m{background:#f8d9d1}.y:nth-child(4) .m{background:#dbe4f6}
+.y h3{font-family:var(--maru);font-weight:700;font-size:17px}
+.y p{font-size:13px;color:var(--sub);line-height:1.7}
+.recital{margin-top:28px;border-radius:28px;overflow:hidden;position:relative;aspect-ratio:16/10;color:#fff}
+.recital img{width:100%;height:100%;object-fit:cover}
+.recital::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(20,26,45,.8))}
+.recital p{position:absolute;left:22px;right:22px;bottom:18px;z-index:1;font-family:var(--maru);font-weight:700;font-size:16px;line-height:1.7}
+.recital p small{display:block;font-family:"Noto Sans JP";font-weight:400;font-size:12px;opacity:.9}
+
+/* teacher */
+.teacher{background:var(--bg2);border-radius:44px}
+.t-grid{display:grid;gap:34px}
+.t-ph{position:relative;max-width:440px}
+.t-ph .im{aspect-ratio:1/1;border-radius:42% 58% 55% 45%/48% 44% 56% 52%;overflow:hidden}
+.t-ph img{width:100%;height:100%;object-fit:cover}
+.t-name{font-family:var(--maru);font-weight:700;font-size:26px;letter-spacing:.1em;margin:4px 0 16px}
+.t-name small{font-family:var(--en);font-size:12px;letter-spacing:.2em;color:var(--coral);margin-left:12px}
+.t-bio{list-style:none;margin:22px 0 0;padding:0;font-size:13.5px}
+.t-bio li{display:grid;grid-template-columns:5.2em 1fr;padding:9px 0;border-top:2px dotted var(--line)}
+.t-bio li span{color:var(--sub)}
+
+/* voice */
+.v-grid{display:grid;gap:18px}
+.v{background:var(--card);border-radius:26px;padding:28px 24px;position:relative}
+.v::after{content:"";position:absolute;left:38px;bottom:-12px;border:12px solid transparent;border-top-color:var(--card);border-bottom:0}
+.v h3{font-family:var(--maru);font-weight:700;font-size:16.5px;line-height:1.8;margin-bottom:8px}
+.v h3 mark{background:linear-gradient(transparent 60%,var(--mustard-s) 60%);color:inherit}
+.v p{font-size:13.5px;color:var(--sub)}
+.v-who{display:flex;align-items:center;gap:10px;margin:22px 0 0 20px;font-size:12.5px;color:var(--sub)}
+.v-who i{width:36px;height:36px;border-radius:50%;background:var(--sage);display:grid;place-items:center;font-style:normal;font-size:17px}
+.note{font-size:11px;color:var(--sub);text-align:right;margin-top:16px}
+
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 8px}
+.gal div{aspect-ratio:1/1;border-radius:20px;overflow:hidden}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.gal div:hover img{transform:scale(1.08)}
+
+/* faq */
+.faq details{background:var(--card);border-radius:20px;margin-bottom:10px;padding:0 22px}
+.faq summary{list-style:none;cursor:pointer;font-family:var(--maru);font-weight:700;font-size:16px;line-height:1.8;padding:18px 34px 18px 42px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";position:absolute;left:0;top:16px;width:30px;height:30px;border-radius:50%;background:var(--mustard);display:grid;place-items:center;font-family:var(--en);font-size:15px;line-height:1;padding-top:3px}
+.faq summary::after{content:"";position:absolute;right:4px;top:28px;width:9px;height:9px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(45deg);transition:.3s}
+.faq details[open] summary::after{transform:rotate(-135deg);top:32px}
+.faq details p{padding:0 0 20px 42px;color:var(--sub);font-size:14px}
+
+/* trial */
+.trial{background:var(--ink);color:#f3eee2;border-radius:44px 44px 0 0}
+.trial .ttl p{color:#b8c0d6}
+.tr-grid{display:grid;gap:30px}
+.tr-price{display:inline-flex;align-items:baseline;gap:10px;background:var(--mustard);color:var(--ink);border-radius:18px;padding:8px 20px;font-family:var(--maru);font-weight:700;margin-top:6px}
+.tr-price b{font-family:var(--en);font-size:32px;line-height:1.2}
+.tr-steps{list-style:none;margin:26px 0 0;padding:0;counter-reset:t}
+.tr-steps li{counter-increment:t;display:flex;gap:14px;align-items:center;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:14px}
+.tr-steps li::before{content:counter(t);flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--mustard);color:var(--mustard);display:grid;place-items:center;font-family:var(--en);font-size:14px;line-height:1;padding-top:2px}
+form{background:#fff;color:var(--ink);border-radius:28px;padding:26px 22px}
+label{display:block;font-size:12.5px;font-weight:700;margin:16px 0 5px}
+label:first-child{margin-top:0}
+label em{font-style:normal;font-size:10px;background:var(--coral);color:#fff;border-radius:4px;padding:1px 6px;margin-left:6px;font-weight:500}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--mustard);box-shadow:0 0 0 3px var(--mustard-s)}
+form .btn{width:100%;margin-top:22px}
+.f-note{font-size:11.5px;color:var(--sub);text-align:center;margin-top:12px;line-height:1.7}
+
+/* access */
+.access{background:var(--ink);padding-top:0}
+.acc{background:var(--bg);border-radius:36px;padding:34px 22px;display:grid;gap:26px}
+.map{aspect-ratio:4/3;border-radius:22px;overflow:hidden;background:var(--bg2)}
+.map iframe{width:100%;height:100%;border:0}
+.info{margin:0;font-size:14px}
+.info div{display:grid;grid-template-columns:5.5em 1fr;gap:8px;padding:12px 0;border-bottom:2px dotted var(--line)}
+.info dt{color:var(--sub)}.info dd{margin:0}
+
+footer{background:var(--ink);color:#aeb7cf;text-align:center;padding:44px 0 30px;font-size:12px}
+footer .logo{justify-content:center;color:#fff;margin-bottom:18px}
+footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;font-size:13px;margin-bottom:26px}
+footer p{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:11px;line-height:1.8}
+
+.bottom{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:rgba(251,246,236,.96);backdrop-filter:blur(8px);box-shadow:0 -1px 0 var(--line)}
+.bottom .btn{width:100%;padding:13px}
+
+@media (min-width:900px){
+  body{padding-bottom:0;font-size:15.5px}
+  .bottom,.burger{display:none}
+  .gnav{display:flex}.head .btn{display:inline-flex}
+  .head{height:84px}
+  .wrap{padding:0 40px}
+  .hero{padding:50px 0 120px}
+  .hero-grid{grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+  .hero-vis{padding:0 0 50px 40px}
+  .hero-vis .sub{left:0;width:38%}
+  .stamp,.stamp-c{width:140px;height:140px;right:-40px}
+  .b1{width:520px;height:520px;right:-160px;top:-90px}
+  section{padding:130px 0}
+  .ttl{margin-bottom:56px}
+  .about-grid{grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+  .f-grid,.c-grid,.v-grid{grid-template-columns:repeat(3,1fr);gap:28px}
+  .f:nth-child(2){margin-top:40px}.f:nth-child(3){margin-top:80px}
+  .course{padding-top:40px}
+  .bar{grid-template-columns:1fr 2fr 2fr 1fr;gap:12px}
+  .yr{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+  .recital{margin-top:0;aspect-ratio:auto;height:100%}
+  .t-grid{grid-template-columns:440px 1fr;gap:80px;align-items:center}
+  .gal{grid-template-columns:repeat(4,1fr);gap:14px;padding:0 14px}
+  .faq .wrap{max-width:860px}
+  .tr-grid{grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+  form{padding:38px 36px}
+  .acc{grid-template-columns:1.2fr 1fr;gap:50px;padding:50px;align-items:center}
+}
+</style>
+</head>
+<body>
+<div class="demo-bar">ホームページの見本です（架空の教室）｜制作 <a href="../../index.html">ネオリアリズム</a></div>
+
+<header id="hd">
+  <div class="wrap head">
+    <a class="logo" href="#top">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#e9b44c"/><path d="M17 27.500a3.500 3.500 0 1 1-2-3.200V12.500l12-2.500v13a3.500 3.500 0 1 1-2-3.200V14.400l-8 1.700z" fill="#223052"/></svg>
+      <span><small>OTONOHA PIANO</small>おとのはピアノ教室</span>
+    </a>
+    <nav class="gnav"><a href="#about">教室について</a><a href="#course">コース・月謝</a><a href="#teacher">講師</a><a href="#faq">よくある質問</a><a href="#access">アクセス</a></nav>
+    <a class="btn sm" href="#trial">体験レッスン <i>→</i></a>
+    <button class="burger" aria-label="メニュー" onclick="document.body.classList.toggle('open')"><i></i></button>
+  </div>
+</header>
+<div class="drawer" onclick="if(event.target.closest('a'))document.body.classList.remove('open')">
+  <a class="m" href="#about">教室について<span>ABOUT</span></a>
+  <a class="m" href="#course">コース・月謝<span>COURSE</span></a>
+  <a class="m" href="#year">1年のながれ<span>SCHEDULE</span></a>
+  <a class="m" href="#teacher">講師紹介<span>TEACHER</span></a>
+  <a class="m" href="#faq">よくある質問<span>Q&amp;A</span></a>
+  <a class="m" href="#access">アクセス<span>ACCESS</span></a>
+  <a class="btn" href="#trial">体験レッスンを申し込む <i>→</i></a>
+</div>
+
+<main id="top">
+<section class="hero">
+  <span class="blob b1"></span>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill rv in"><b>NEW</b>2027年4月入会の体験レッスン受付中</span>
+      <h1 class="rv in"><span style="white-space:nowrap">「弾けた！」が、</span><br><span style="white-space:nowrap">毎週<em>ひとつ</em>ふえる。</span></h1>
+      <p class="lead rv in d1">世田谷・経堂の、ちいさなピアノ教室です。3歳から大人まで、ひとりずつの個人レッスン。その子の進み方に合わせて、曲も宿題の量も決めていきます。</p>
+      <div class="cta rv in d2">
+        <a class="btn" href="#trial">体験レッスンを申し込む <i>→</i></a>
+        <a class="btn w" href="#course">月謝を見る <i>→</i></a>
+      </div>
+      <div class="stats rv in d3">
+        <div><b>3<small>歳〜</small></b>大人の方まで</div>
+        <div><b>1<small>対1</small></b>個人レッスン</div>
+        <div><b>6<small>分</small></b>経堂駅から徒歩</div>
+      </div>
+    </div>
+    <div class="hero-vis rv in d1">
+      <span class="blob b2"></span>
+      <div class="main"><img src="https://images.unsplash.com/photo-1696522732406-065ef560da8c?auto=format&fit=crop&w=1100&q=75" alt="楽譜を見ながらピアノを弾く子どもたち"></div>
+      <div class="sub"><img src="https://images.unsplash.com/photo-1768881572516-9be0745b2cb9?auto=format&fit=crop&w=500&q=75" alt="観葉植物のあるレッスン室のピアノ"></div>
+      <svg class="stamp" viewBox="0 0 140 140" aria-hidden="true"><circle cx="70" cy="70" r="70" fill="#e2725b"/><defs><path id="cp" d="M70 70m-52 0a52 52 0 1 1 104 0a52 52 0 1 1-104 0"/></defs><text font-family="Josefin Sans,sans-serif" font-size="12.500" font-weight="600" fill="#fff"><textPath href="#cp" textLength="318" lengthAdjust="spacing">TRIAL LESSON ・ 30 MIN ・ WELCOME ・</textPath></text></svg>
+      <span class="stamp-c" aria-hidden="true">🎹</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div>PIANO LESSON FOR KIDS &amp; ADULTS<span>♪</span>OTONOHA PIANO SCHOOL<span>♪</span>KYODO, SETAGAYA<span>♪</span>PIANO LESSON FOR KIDS &amp; ADULTS<span>♪</span>OTONOHA PIANO SCHOOL<span>♪</span>KYODO, SETAGAYA<span>♪</span>PIANO LESSON FOR KIDS &amp; ADULTS<span>♪</span>OTONOHA PIANO SCHOOL<span>♪</span>KYODO, SETAGAYA<span>♪</span>PIANO LESSON FOR KIDS &amp; ADULTS<span>♪</span>OTONOHA PIANO SCHOOL<span>♪</span>KYODO, SETAGAYA<span>♪</span></div></div>
+
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div class="about-ph rv">
+      <div class="a1"><img loading="lazy" src="https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&w=1100&q=75" alt="木目のピアノを弾く手"></div>
+      <span class="tag">できたことを、<br>ひとつ言葉にして帰します。</span>
+    </div>
+    <div class="rv d1">
+      <div class="ttl" style="margin-bottom:22px"><span class="en">ABOUT</span><h2>「練習しなさい」と<br>言わなくていい教室に。</h2></div>
+      <p>ピアノは、家での時間のほうがずっと長い習い事です。だから当教室では、レッスンの最後に「今週はここだけ」をひとつ決めます。量は、その子が自分でできる分だけ。</p>
+      <p>小さな「弾けた！」が毎週ひとつずつ増えていくと、子どもは自分からピアノのふたを開けるようになります。その日を、保護者の方と一緒に待ちたいと思っています。</p>
+      <p class="hand">講師　音羽 はるか</p>
+    </div>
+  </div>
+</section>
+
+<section class="feat">
+  <div class="wrap">
+    <div class="ttl c rv"><span class="en">FEATURE</span><h2>教室の3つの特徴</h2></div>
+    <div class="f-grid">
+      <article class="f rv">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1636464808108-644053e72420?auto=format&fit=crop&w=900&q=75" alt="鍵盤に置いた子どもの手"></div>
+        <div class="bd"><span class="n">01</span><h3>ひとりずつの<br>個人レッスン</h3><p>グループではなく1対1。得意なところは先へ、苦手なところはゆっくり。進み方はその子に合わせます。</p></div>
+      </article>
+      <article class="f rv d1">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1568057609581-8556cf900d3c?auto=format&fit=crop&w=900&q=75" alt="光の差す楽譜"></div>
+        <div class="bd"><span class="n">02</span><h3>振替は月1回まで。<br>学校行事でも安心</h3><p>前日までのご連絡で、同じ月の空き枠に振り替えます。LINEで24時間いつでも連絡できます。</p></div>
+      </article>
+      <article class="f rv d2">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1780039298271-f3e1318eb3ae?auto=format&fit=crop&w=900&q=75" alt="カラフルなベルと鉄琴"></div>
+        <div class="bd"><span class="n">03</span><h3>小さい子は、<br>音あそびから</h3><p>3〜5歳はベルやリズムカードを使って、遊びながら音と仲良くなるところから始めます。</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="course" class="course">
+  <div class="wrap">
+    <div class="ttl c rv"><span class="en">COURSE</span><h2>コース・月謝</h2><p>表示はすべて税込。レッスンは年間42回です。</p></div>
+    <div class="c-grid">
+      <article class="cs rv">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1519076976365-9c64dbd98317?auto=format&fit=crop&w=900&q=75" alt="鍵盤を弾く小さな手"><span class="age">3歳〜年長</span></div>
+        <div class="bd"><h3>はじめてコース</h3><p class="desc">30分｜歌・リズム・音あそびから鍵盤へ</p>
+          <div class="fee"><span>月謝</span><b>6,500</b><small>円</small></div>
+          <ul><li>保護者の方の付き添いOK</li><li>楽器がなくても始められます</li></ul></div>
+      </article>
+      <article class="cs rv d1">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1696522732406-065ef560da8c?auto=format&fit=crop&w=900&q=75" alt="楽譜を見て弾く子ども"><span class="age">小学生〜高校生</span></div>
+        <div class="bd"><h3>こどもコース</h3><p class="desc">30分／40分｜楽譜を読んで、自分で弾く</p>
+          <div class="fee"><span>月謝</span><b>7,500</b><small>円〜</small></div>
+          <ul><li>40分レッスンは 9,000円</li><li>合唱の伴奏・保育系の受験にも対応</li></ul></div>
+      </article>
+      <article class="cs rv d2">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1584208124835-8a3d74ae211c?auto=format&fit=crop&w=900&q=75" alt="ピアノを弾く大人の手"><span class="age">大人の方</span></div>
+        <div class="bd"><h3>おとなコース</h3><p class="desc">45分・月2回｜弾きたい1曲から</p>
+          <div class="fee"><span>月謝</span><b>7,000</b><small>円</small></div>
+          <ul><li>日時はその都度ご予約</li><li>平日の午前も空いています</li></ul></div>
+      </article>
+    </div>
+    <p class="fine rv">入会金 5,000円（ごきょうだいは2人目から無料）／教材費は実費／発表会の参加費は別途ご案内します。<br>月謝は毎月の最初のレッスンで、月謝袋または銀行振込でお願いしています。</p>
+  </div>
+</section>
+
+<section class="lesson">
+  <div class="wrap">
+    <div class="ttl rv"><span class="en">LESSON</span><h2>30分のレッスンは、<br>こう進みます</h2><p>こどもコース（30分）の一例です。</p></div>
+    <div class="bar rv d1">
+      <div class="seg"><div class="min">5<small>分</small></div><h3>あいさつ・指の体操</h3><p>今週のできごとを聞きながら、手をほぐします。</p></div>
+      <div class="seg"><div class="min">10<small>分</small></div><h3>今週の曲を聴かせてもらう</h3><p>おうちで弾いてきた曲を1回通して。よかった所を先に伝えます。</p></div>
+      <div class="seg"><div class="min">10<small>分</small></div><h3>新しいところへ</h3><p>次の4小節や新しい曲を一緒に。むずかしい所は片手ずつ。</p></div>
+      <div class="seg"><div class="min">5<small>分</small></div><h3>「今週はここだけ」</h3><p>宿題をひとつ決めて、連絡ノートに書きます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="year">
+  <div class="wrap">
+    <div class="ttl rv"><span class="en">SCHEDULE</span><h2>1年のながれ</h2></div>
+    <div class="yr">
+      <div class="y-grid">
+        <div class="y rv"><div class="m"><span>4<small>月</small></span></div><div><h3>新年度スタート</h3><p>曲と1年の目標をいっしょに決めます</p></div></div>
+        <div class="y rv d1"><div class="m"><span>7<small>月</small></span></div><div><h3>発表会の曲決め</h3><p>弾きたい曲を持ってきてください</p></div></div>
+        <div class="y rv d2"><div class="m"><span>11<small>月</small></span></div><div><h3>発表会</h3><p>区民ホールの小ホールで。参加は自由です</p></div></div>
+        <div class="y rv d3"><div class="m"><span>3<small>月</small></span></div><div><h3>ミニ弾き合い会</h3><p>教室で、1年のまとめに</p></div></div>
+      </div>
+      <div class="recital rv d1"><img loading="lazy" src="https://images.unsplash.com/photo-1684784176798-aae206e325e7?auto=format&fit=crop&w=1100&q=75" alt="ホールのステージに置かれたグランドピアノ"><p>年に1度、ホールのグランドピアノで。<small>出ない年があっても大丈夫です。</small></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="teacher" class="teacher">
+  <div class="wrap t-grid">
+    <div class="t-ph rv"><div class="im"><img loading="lazy" src="https://images.unsplash.com/photo-1768881572516-9be0745b2cb9?auto=format&fit=crop&w=1000&q=75" alt="レッスン室のピアノ"></div></div>
+    <div class="rv d1">
+      <div class="ttl" style="margin-bottom:10px"><span class="en">TEACHER</span><h2>講師紹介</h2></div>
+      <p class="t-name">音羽 はるか<small>HARUKA OTOWA</small></p>
+      <p>音楽大学のピアノ科を卒業後、楽器店の音楽教室で8年間、のべ200人ほどの生徒さんを教えてきました。自分の子どもが生まれたのをきっかけに、自宅で教室を開いています。</p>
+      <p style="margin-top:1em">得意なのは、楽譜を読むのが苦手な子と一緒に、読み方を見つけていくこと。大人の方の「昔やっていたけれど」も大歓迎です。</p>
+      <ul class="t-bio">
+        <li><span>2010年</span>音楽大学 ピアノ科 卒業</li>
+        <li><span>2010年〜</span>楽器店の音楽教室 講師</li>
+        <li><span>2020年</span>おとのはピアノ教室 開講</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="ttl c rv"><span class="en">VOICE</span><h2>保護者・生徒さんの声</h2></div>
+    <div class="v-grid">
+      <div class="rv"><div class="v"><h3><mark>自分からピアノに向かう日</mark>が増えました。</h3><p>宿題が「ここだけ」と決まっているので、本人も取りかかりやすいようです。連絡ノートで様子が分かるのも助かります。</p></div><div class="v-who"><i>🌷</i>小学2年生の保護者</div></div>
+      <div class="rv d1"><div class="v"><h3><mark>振替ができる</mark>ので、続けられています。</h3><p>学校行事や体調不良でお休みしても、同じ月に振り替えてもらえます。LINEで連絡できるのが便利です。</p></div><div class="v-who"><i>🍀</i>年長・小学4年生の保護者</div></div>
+      <div class="rv d2"><div class="v"><h3>40年ぶりのピアノ。<mark>弾きたかった曲</mark>から始められました。</h3><p>基礎からやり直しかと思っていましたが、好きな曲を弾きながら少しずつ教えてもらえます。</p></div><div class="v-who"><i>🎵</i>60代・おとなコース</div></div>
+    </div>
+    <p class="note">※ 個人の感想です。見本サイトのため、文は例文です。</p>
+  </div>
+</section>
+
+<div class="gal">
+  <div><img loading="lazy" src="https://images.unsplash.com/photo-1780245986598-be35b3b88614?auto=format&fit=crop&w=700&h=700&q=70" alt="レッスン室"></div>
+  <div><img loading="lazy" src="https://images.unsplash.com/photo-1620754733890-75a20f393d01?auto=format&fit=crop&w=700&h=700&q=70" alt="楽譜と花"></div>
+  <div><img loading="lazy" src="https://images.unsplash.com/photo-1773952984185-ba33a505af54?auto=format&fit=crop&w=700&h=700&q=70" alt="ピアノの鍵盤"></div>
+  <div><img loading="lazy" src="https://images.unsplash.com/photo-1636464808108-644053e72420?auto=format&fit=crop&w=700&h=700&q=70" alt="子どもの手"></div>
+</div>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="ttl c rv"><span class="en">Q &amp; A</span><h2>よくある質問</h2></div>
+    <div class="rv d1">
+      <details open><summary>家にピアノがなくても通えますか？</summary><p>はい。最初の半年ほどは、電子ピアノやキーボードで大丈夫です。選び方もご相談ください。</p></details>
+      <details><summary>お休みしたときはどうなりますか？</summary><p>前日までにご連絡いただければ、同じ月の空き枠に月1回まで振り替えます。当日のお休みは振替がありません。</p></details>
+      <details><summary>親はレッスンを見ていてもいいですか？</summary><p>もちろんです。はじめてコースは付き添いをおすすめしています。小学生からは、送り迎えだけでも構いません。</p></details>
+      <details><summary>発表会には必ず出ないといけませんか？</summary><p>参加は自由です。人前が苦手なお子さんは、3月の教室での弾き合い会から始めることもできます。</p></details>
+      <details><summary>退会するときは？</summary><p>前の月の20日までにお知らせください。くわしくは、入会のときに規約をお渡しします。</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="trial" class="trial">
+  <div class="wrap tr-grid">
+    <div class="rv">
+      <div class="ttl" style="margin-bottom:14px"><span class="en">TRIAL LESSON</span><h2>まずは、体験レッスンへ。</h2><p>入会を決めなくても大丈夫です。お子さまの様子を見て、ゆっくり考えてください。</p></div>
+      <span class="tr-price">30分<b>1,000</b>円</span>
+      <ol class="tr-steps">
+        <li>フォームから、希望の曜日を送る</li>
+        <li>2日以内に、日時の候補をお返事します</li>
+        <li>当日は手ぶらでお越しください</li>
+        <li>その場での入会のおすすめはしません</li>
+      </ol>
+    </div>
+    <form class="rv d1" onsubmit="event.preventDefault();document.getElementById('sent').textContent='見本のため、送信はされていません。'">
+      <label for="n">お名前（保護者の方）<em>必須</em></label>
+      <input id="n" type="text" placeholder="例）山田 花子" autocomplete="off">
+      <label for="a">習う方の年齢・学年<em>必須</em></label>
+      <input id="a" type="text" placeholder="例）年長／小学2年／大人" autocomplete="off">
+      <label for="d">ご希望の曜日</label>
+      <select id="d"><option>火曜の夕方</option><option>水曜の夕方</option><option>金曜の夕方</option><option>土曜の午前</option><option>平日の午前（大人の方）</option></select>
+      <label for="m">ご連絡先（メールまたは電話）<em>必須</em></label>
+      <input id="m" type="text" autocomplete="off">
+      <label for="t">ひとこと</label>
+      <textarea id="t" rows="3" placeholder="ピアノの経験、気になることなど"></textarea>
+      <button class="btn" type="submit">この内容で申し込む <i>→</i></button>
+      <p class="f-note" id="sent">見本のフォームです。入力した内容はどこにも送られません。</p>
+    </form>
+  </div>
+</section>
+
+<section id="access" class="access">
+  <div class="wrap">
+    <div class="acc rv">
+      <div class="map"><iframe loading="lazy" title="地図" src="https://www.google.com/maps?q=%E7%B5%8C%E5%A0%82%E9%A7%85&z=16&hl=ja&output=embed"></iframe></div>
+      <div>
+        <div class="ttl" style="margin-bottom:14px"><span class="en">ACCESS</span><h2>教室の場所</h2></div>
+        <dl class="info">
+          <div><dt>住所</dt><dd>東京都世田谷区経堂 0-0-0（講師自宅）</dd></div>
+          <div><dt>最寄り駅</dt><dd>小田急線「経堂駅」北口より徒歩6分</dd></div>
+          <div><dt>レッスン</dt><dd>火・水・金 15:00–19:30／土 9:00–12:00</dd></div>
+          <div><dt>駐輪・駐車</dt><dd>自転車は門の内側へ。お車は1台分あります</dd></div>
+          <div><dt>ご連絡</dt><dd>体験フォーム、または 03-0000-0000</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#top"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#e9b44c"/><path d="M17 27.500a3.500 3.500 0 1 1-2-3.200V12.500l12-2.500v13a3.500 3.500 0 1 1-2-3.200V14.400l-8 1.700z" fill="#223052"/></svg><span>おとのはピアノ教室</span></a>
+    <nav><a href="#about">教室について</a><a href="#course">コース・月謝</a><a href="#year">1年のながれ</a><a href="#teacher">講師</a><a href="#faq">よくある質問</a><a href="#trial">体験レッスン</a></nav>
+    <p>© Otonoha Piano School<br>このサイトは見本です。教室・人物・連絡先はすべて架空のものです。写真：Unsplash</p>
+  </div>
+</footer>
+
+<div class="bottom"><a class="btn" href="#trial">体験レッスン（30分・1,000円） <i>→</i></a></div>
+
+<script>
+const hd=document.getElementById('hd');
+const onS=()=>hd.classList.toggle('solid',scrollY>30);
+addEventListener('scroll',onS,{passive:true});onS();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv:not(.in)').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

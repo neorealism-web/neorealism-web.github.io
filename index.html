@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>ネオリアリズム｜小さなお店のホームページ制作</title>
+<meta name="description" content="小さなお店・教室・個人事業のホームページを作ります。ご依頼の前に、あなたのお店の見本を無料でお見せします。1ページ 50,000円から。">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f4f1ea;--paper2:#ebe6db;--card:#fbf9f4;--ink:#14161b;--ink2:#1e2128;--sub:#5c606a;--line:#d8d2c5;--red:#dc4a2d;--en:"Archivo",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;font-size:15px;line-height:2;letter-spacing:.02em;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+.en{font-family:var(--en)}
+.js .rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.12s}.js .rv.d2{transition-delay:.24s}.js .rv.d3{transition-delay:.36s}
+
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;color:#fff;transition:background .35s,color .35s,box-shadow .35s}
+header.solid{background:rgba(244,241,234,.95);backdrop-filter:blur(10px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.head{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:17px;letter-spacing:.06em}
+.logo i{width:13px;height:13px;background:var(--red);display:block}
+.logo small{font-family:var(--en);font-weight:500;font-size:10px;letter-spacing:.24em;opacity:.6;margin-left:4px;display:none}
+.gnav{display:none;gap:30px;font-size:13px;font-weight:500}
+.gnav a{position:relative}
+.gnav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.gnav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;background:var(--red);color:#fff;font-weight:700;padding:17px 30px;font-size:15px;letter-spacing:.06em;border:1.5px solid var(--red);transition:background .25s,color .25s,border-color .25s;cursor:pointer}
+.btn::after{content:"→";font-family:var(--en);transition:transform .25s}
+.btn:hover::after{transform:translateX(6px)}
+.btn:hover{background:#c23c22;border-color:#c23c22}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+.btn.ghost:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn.dark{background:var(--ink);border-color:var(--ink)}
+.btn.dark:hover{background:var(--red);border-color:var(--red)}
+.btn.sm{padding:8px 13px;font-size:12px;gap:8px}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden;padding:110px 0 0}
+.hero::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px) 0 0/100% 80px,
+  linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px) 0 0/80px 100%;pointer-events:none}
+.hero::after{content:"";position:absolute;width:700px;height:700px;border-radius:50%;right:-240px;top:-200px;background:radial-gradient(circle,rgba(220,74,45,.5),transparent 62%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:500;letter-spacing:.04em;color:#d6d3cc;white-space:nowrap}
+.kicker::before{content:"";width:28px;height:2px;background:var(--red)}
+.hero h1{font-weight:900;font-size:clamp(36px,10.2vw,84px);line-height:1.22;letter-spacing:-.01em;margin:18px 0 22px}
+.hero h1 span{color:var(--red)}
+.hero h1 em{font-style:normal;white-space:nowrap}
+.hero .lead{max-width:33em;color:#c8c5be;font-size:15px}
+.hero .lead b{color:#fff;font-weight:700}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-nums{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:44px;border-top:1px solid rgba(255,255,255,.18)}
+.hero-nums div{padding:16px 0 14px;font-size:11.5px;color:#a9a69f;line-height:1.6;border-bottom:1px solid rgba(255,255,255,.1)}
+.hero-nums div:nth-child(odd){border-right:1px solid rgba(255,255,255,.1);padding-right:10px}
+.hero-nums div:nth-child(even){padding-left:16px}
+.hero-nums b{white-space:nowrap;display:block;font-family:var(--en);font-weight:800;font-size:30px;color:#fff;line-height:1.25;letter-spacing:.01em}
+.hero-nums b small{font-family:"Noto Sans JP";font-size:12px;font-weight:700;margin-left:3px}
+.stage{position:relative;margin:54px auto 0;max-width:1000px;padding:0 0 0 0}
+.stage .browser{transform:translateY(8px)}
+.stage .phone{position:absolute;right:4%;bottom:-10px;width:27%;min-width:104px;z-index:2}
+
+/* device mocks */
+.browser{background:#2a2d35;border-radius:12px 12px 0 0;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);overflow:hidden}
+.browser.full{border-radius:12px}
+.browser .bar{height:30px;display:flex;align-items:center;gap:6px;padding:0 12px}
+.browser .bar i{width:9px;height:9px;border-radius:50%;background:#4a4e59}
+.browser .bar span{margin-left:10px;flex:1;max-width:320px;height:17px;border-radius:9px;background:#3a3e48;font-family:var(--en);font-size:9px;color:#9b9fa9;display:flex;align-items:center;padding:0 10px;letter-spacing:.04em;overflow:hidden;white-space:nowrap}
+.view{position:relative;overflow:hidden;background:#fff}
+.view iframe{position:absolute;left:0;top:0;border:0;transform-origin:0 0;pointer-events:none;background:#fff}
+.browser .view{aspect-ratio:1280/760}
+.phone{background:#0c0d10;border-radius:13% / 6.2%;padding:3.2%;box-shadow:0 30px 60px -20px rgba(0,0,0,.55),0 0 0 1.5px #3a3d46 inset}
+.phone .view{aspect-ratio:375/760;border-radius:10.500% / 5.200%}
+
+/* ticker */
+.ticker{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0;font-weight:700;font-size:13.5px;letter-spacing:.14em;position:relative;z-index:3}
+.ticker div{display:inline-block;animation:tk 40s linear infinite}
+.ticker span{margin:0 22px;opacity:.55;font-family:var(--en)}
+@keyframes tk{to{transform:translateX(-50%)}}
+
+section{padding:88px 0}
+.label{display:inline-flex;align-items:center;gap:10px;font-family:var(--en);font-weight:800;font-size:12px;letter-spacing:.2em;color:var(--red)}
+.label::before{content:"";width:9px;height:9px;background:var(--red)}
+h2{font-weight:900;font-size:clamp(28px,7vw,52px);line-height:1.35;letter-spacing:-.005em;margin:10px 0 16px}
+.intro{color:var(--sub);max-width:36em}
+.sec-head{margin-bottom:46px}
+
+/* why */
+.why-grid{display:grid;gap:36px}
+.why-list{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--ink)}
+.why-list li{display:grid;grid-template-columns:54px 1fr;gap:6px;padding:22px 0;border-bottom:1px solid var(--line)}
+.why-list .n{font-family:var(--en);font-weight:800;font-size:15px;color:var(--red);padding-top:4px}
+.why-list h3{font-size:18px;font-weight:900;line-height:1.6;margin-bottom:4px}
+.why-list p{color:var(--sub);font-size:14px}
+
+/* samples */
+.samples{background:var(--ink);color:#fff}
+.samples .intro{color:#b4b1aa}
+.sample{display:grid;gap:26px;padding:44px 0;border-top:1px solid rgba(255,255,255,.14)}
+.sample:last-child{padding-bottom:0}
+.s-vis{position:relative;display:block}
+.s-vis .browser{display:none}
+.s-vis .phone{width:62%;max-width:270px;margin:0 auto}
+.s-vis .tagline{position:absolute;left:0;top:10px;writing-mode:vertical-rl;font-family:var(--en);font-weight:700;font-size:11px;letter-spacing:.3em;color:#6f737e}
+.s-kind{font-size:12px;font-weight:700;color:var(--red);letter-spacing:.1em}
+.s-body h3{font-size:clamp(26px,6vw,38px);font-weight:900;line-height:1.4;margin:2px 0 10px}
+.s-body p{color:#b4b1aa;font-size:14.5px}
+.s-tags{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 24px;padding:0;list-style:none}
+.s-tags li{font-size:12px;border:1px solid rgba(255,255,255,.26);padding:2px 12px;border-radius:999px;color:#dedbd4}
+.samples .note{margin-top:46px;font-size:12.5px;color:#8f8c85;border-top:1px solid rgba(255,255,255,.14);padding-top:20px}
+
+/* includes */
+.inc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1.5px solid var(--ink);border-left:1px solid var(--line)}
+.inc{padding:24px 16px 26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .3s}
+.inc:hover{background:var(--card)}
+.inc svg{width:30px;height:30px;stroke:var(--red);fill:none;stroke-width:1.600;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
+.inc h3{font-size:15.5px;font-weight:900;line-height:1.6}
+.inc p{font-size:13px;color:var(--sub);line-height:1.8;margin-top:4px}
+
+/* price */
+.price{background:var(--paper2)}
+.plans{display:grid;gap:16px}
+.plan{background:var(--card);border:1.5px solid var(--ink);padding:30px 24px;display:flex;flex-direction:column;position:relative}
+.plan.main{background:var(--ink);color:#fff}
+.plan .pop{position:absolute;right:-1.5px;top:-1.5px;background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:3px 14px;letter-spacing:.1em}
+.plan h3{font-size:17px;font-weight:900}
+.plan .for{font-size:12.5px;color:var(--sub);margin-top:2px}
+.plan.main .for{color:#a9a69f}
+.plan .yen{font-family:var(--en);font-weight:800;font-size:54px;line-height:1.15;margin:16px 0 0;letter-spacing:-.01em}
+.plan .yen small{font-family:"Noto Sans JP";font-size:14px;font-weight:700;margin-left:4px;letter-spacing:.02em}
+.plan .first{display:inline-block;align-self:flex-start;font-size:12.5px;font-weight:700;color:var(--red);border:1px solid var(--red);padding:1px 10px;margin:8px 0 20px}
+.plan.main .first{color:#ffb19f;border-color:#ffb19f}
+.plan ul{list-style:none;margin:0;padding:18px 0 0;border-top:1px solid var(--line);font-size:14px;flex:1}
+.plan.main ul{border-color:#383b44}
+.plan li{position:relative;padding:4px 0 4px 26px}
+.plan li::before{content:"";position:absolute;left:2px;top:14px;width:12px;height:6px;border-left:2px solid var(--red);border-bottom:2px solid var(--red);transform:rotate(-45deg)}
+.extra{display:grid;gap:14px;margin-top:22px}
+.extra div{background:var(--card);border:1px solid var(--line);padding:18px 20px;font-size:13.5px;color:var(--sub);line-height:1.9}
+.extra b{display:block;color:var(--ink);font-size:14.5px}
+
+/* flow */
+.steps{list-style:none;margin:0;padding:0;counter-reset:n;display:grid;gap:0;border-top:1.5px solid var(--ink)}
+.steps li{counter-increment:n;padding:26px 0 26px 76px;position:relative;border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(n,decimal-leading-zero);position:absolute;left:0;top:20px;font-family:var(--en);font-weight:800;font-size:44px;line-height:1;color:var(--red)}
+.steps h3{font-size:18px;font-weight:900;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.steps h3 span{font-size:11px;font-weight:700;background:var(--ink);color:#fff;padding:0 10px;line-height:2}
+.steps h3 span.free{background:var(--red)}
+.steps p{font-size:14px;color:var(--sub);margin-top:4px}
+
+/* honest */
+.honest{background:var(--ink);color:#fff}
+.honest h2 span{color:var(--red)}
+.h-grid{display:grid;gap:0;border-top:1px solid rgba(255,255,255,.2)}
+.h{padding:28px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.h .n{font-family:var(--en);font-weight:800;font-size:13px;color:var(--red);letter-spacing:.1em}
+.h h3{font-size:19px;font-weight:900;margin:4px 0 8px}
+.h p{font-size:14px;color:#b4b1aa}
+
+/* faq */
+.faq-grid{display:grid;gap:10px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1.5px solid var(--ink)}
+summary{cursor:pointer;font-weight:700;font-size:16px;line-height:1.8;padding:20px 40px 20px 0;list-style:none;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::before,summary::after{content:"";position:absolute;right:6px;top:50%;width:16px;height:2px;background:var(--red);transition:transform .3s}
+summary::after{transform:rotate(90deg)}
+details[open] summary::after{transform:rotate(0)}
+details p{padding:0 0 22px;color:var(--sub);font-size:14.5px;max-width:44em}
+
+/* contact */
+.contact{background:var(--red);color:#fff;text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"NEOREALISM";position:absolute;left:50%;bottom:-.24em;transform:translateX(-50%);font-family:var(--en);font-weight:800;font-size:clamp(70px,19vw,250px);line-height:1;color:rgba(0,0,0,.09);white-space:nowrap;letter-spacing:-.02em}
+.contact .wrap{position:relative}
+.contact h2{margin:0 0 14px}
+.contact p{max-width:30em;margin:0 auto;opacity:.95}
+.pending{display:inline-block;margin-top:28px;background:var(--ink);color:#fff;font-weight:700;padding:16px 30px;font-size:14.5px;letter-spacing:.06em}
+footer{background:var(--ink);color:#8d9099;font-size:12px;padding:30px 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center}
+footer .logo{color:#fff}
+
+@media (min-width:900px){
+  body{font-size:16px}
+  .wrap{padding:0 40px}
+  .head{height:80px}
+  .logo small{display:inline}
+  .btn.sm{padding:10px 18px;font-size:13px;gap:10px}
+  .gnav{display:flex}
+  .hero{padding:170px 0 0}
+  .hero-top{display:grid;grid-template-columns:1.5fr .7fr;gap:50px;align-items:end}
+  .hero .lead{font-size:16px}
+  .kicker{font-size:12.5px;letter-spacing:.1em}
+  .hero-nums{margin-top:0;grid-template-columns:1fr 1fr}
+  .hero-nums b{font-size:32px}
+  .stage{margin-top:90px}
+  .stage .phone{width:21%;right:-3%;bottom:-20px}
+  section{padding:150px 0}
+  .sec-head{margin-bottom:70px}
+  .why-grid{grid-template-columns:.9fr 1.1fr;gap:90px;align-items:start}
+  .why-grid .sec-head{position:sticky;top:120px}
+  .sample{grid-template-columns:1.25fr .75fr;gap:70px;align-items:center;padding:80px 0}
+  .sample:nth-child(even) .s-vis{order:2}
+  .sample:nth-child(even){grid-template-columns:.75fr 1.25fr}
+  .s-vis{padding:0 9% 6% 0}
+  .s-vis .browser{display:block}
+  .s-vis .phone{position:absolute;right:0;bottom:0;width:24%;margin:0}
+  .s-vis .tagline{display:none}
+  .inc-grid{grid-template-columns:repeat(4,1fr)}
+  .inc{padding:34px 26px 38px}
+  .plans{grid-template-columns:1.1fr 1fr 1fr;gap:20px;align-items:stretch}
+  .plan{padding:40px 34px}
+  .extra{grid-template-columns:1fr 1fr}
+  .flow-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;align-items:start}
+  .flow-grid .sec-head{position:sticky;top:120px}
+  .h-grid{grid-template-columns:repeat(3,1fr)}
+  .h{padding:40px 36px 10px 0}
+  .h+.h{padding-left:36px;border-left:1px solid rgba(255,255,255,.14)}
+  .h{border-bottom:0}
+  .faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;align-items:start}
+}
+</style>
+</head>
+<body>
+<header id="hd">
+  <div class="wrap head">
+    <a class="logo" href="#top"><i></i>ネオリアリズム<small>NEOREALISM</small></a>
+    <nav class="gnav"><a href="#samples">見本</a><a href="#include">できること</a><a href="#price">料金</a><a href="#flow">進め方</a><a href="#faq">よくある質問</a></nav>
+    <a class="btn sm" href="#contact">無料で見本を頼む</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div>
+        <span class="kicker rv in">小さなお店・教室・個人事業のホームページ制作</span>
+        <h1 class="rv in">頼む前に、<br><em><span>見本</span>が見られる。</em></h1>
+        <p class="lead rv in d1">ご相談をいただいたら、先に<b>あなたのお店のトップページ</b>を作ってお見せします。気に入らなければ、そこで終わりで構いません。<b>見本は無料</b>です。</p>
+        <div class="cta rv in d2">
+          <a class="btn" href="#samples">見本サイトを見る</a>
+          <a class="btn ghost" href="#price">料金を見る</a>
+        </div>
+      </div>
+      <div class="hero-nums rv in d2">
+        <div><b class="en">50,000<small>円〜</small></b>1ページのホームページ</div>
+        <div><b class="en">0<small>円</small></b>最初の見本</div>
+        <div><b class="en">7<small>日</small></b>素材がそろってから公開まで</div>
+        <div><b class="en">5,000<small>円/月</small></b>公開後の更新（任意）</div>
+      </div>
+    </div>
+    <div class="stage rv in d3">
+      <div class="browser"><div class="bar"><i></i><i></i><i></i><span>komorebi-seitai.example</span></div><div class="view" data-w="1280"><iframe src="demo/seitai/index.html" title="整体院の見本" tabindex="-1" scrolling="no"></iframe></div></div>
+      <div class="phone"><div class="view" data-w="375"><iframe src="demo/piano/index.html" title="ピアノ教室の見本" tabindex="-1" scrolling="no"></iframe></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div>整体院<span>/</span>美容室<span>/</span>ピアノ教室<span>/</span>学習塾<span>/</span>カフェ<span>/</span>パン屋<span>/</span>ネイルサロン<span>/</span>鍼灸院<span>/</span>ヨガ教室<span>/</span>工務店<span>/</span>行政書士<span>/</span>写真館<span>/</span>整体院<span>/</span>美容室<span>/</span>ピアノ教室<span>/</span>学習塾<span>/</span>カフェ<span>/</span>パン屋<span>/</span>ネイルサロン<span>/</span>鍼灸院<span>/</span>ヨガ教室<span>/</span>工務店<span>/</span>行政書士<span>/</span>写真館<span>/</span></div></div>
+
+<section>
+  <div class="wrap why-grid">
+    <div class="sec-head rv">
+      <span class="label">WHY</span>
+      <h2>ホームページ、<br>後回しに<br>していませんか。</h2>
+      <p class="intro">「いくらかかるか分からない」「頼んでみないと出来が分からない」。その不安を、順番を変えてなくしました。</p>
+    </div>
+    <ul class="why-list rv d1">
+      <li><span class="n">01</span><div><h3>出来上がりを見てから決められる</h3><p>文章だけの提案や、よそのお店の制作例ではなく、あなたのお店の名前とメニューが入った見本をお見せします。</p></div></li>
+      <li><span class="n">02</span><div><h3>料金は最初から決まっている</h3><p>1ページ 50,000円、5ページまで 90,000円。見積もりのあとで金額が増えることはありません。</p></div></li>
+      <li><span class="n">03</span><div><h3>スマホで見やすいことを最優先</h3><p>お店を探す人の多くはスマホで見ています。電話・予約・地図のボタンを、親指の届く場所に置きます。</p></div></li>
+      <li><span class="n">04</span><div><h3>作ったあとも、放っておかない</h3><p>営業時間の変更やお知らせの追加は、月5,000円でお任せいただけます。もちろん、ご自身で更新することもできます。</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section id="samples" class="samples">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="label">SAMPLES</span>
+      <h2>見本サイト</h2>
+      <p class="intro">下の画面は画像ではなく、実際に動いているサイトです。開いて、スマホでも触ってみてください。色・雰囲気・載せる内容は、お店に合わせて一から決めます。</p>
+    </div>
+
+    <article class="sample">
+      <a class="s-vis rv" href="demo/seitai/index.html">
+        <span class="tagline">CLINIC</span>
+        <div class="browser full"><div class="bar"><i></i><i></i><i></i><span>komorebi-seitai.example</span></div><div class="view" data-w="1280"><iframe loading="lazy" src="demo/seitai/index.html" title="整体院の見本（PC）" tabindex="-1" scrolling="no"></iframe></div></div>
+        <div class="phone"><div class="view" data-w="375"><iframe loading="lazy" src="demo/seitai/index.html" title="整体院の見本（スマホ）" tabindex="-1" scrolling="no"></iframe></div></div>
+      </a>
+      <div class="s-body rv d1">
+        <span class="s-kind">整体院・治療院・サロン</span>
+        <h3>こもれび整体院</h3>
+        <p>写真を大きく使った、静かで落ち着いた作り。はじめての方が不安に思うこと（何をされるのか・いくらか・どこにあるか）に、上から順に答えていく構成です。</p>
+        <ul class="s-tags"><li>初回の流れ</li><li>料金表</li><li>お客様の声</li><li>Googleマップ</li><li>受付時間の表</li><li>スマホ下の予約ボタン</li></ul>
+        <a class="btn" href="demo/seitai/index.html">この見本を開く</a>
+      </div>
+    </article>
+
+    <article class="sample">
+      <a class="s-vis rv" href="demo/piano/index.html">
+        <span class="tagline">SCHOOL</span>
+        <div class="browser full"><div class="bar"><i></i><i></i><i></i><span>otonoha-piano.example</span></div><div class="view" data-w="1280"><iframe loading="lazy" src="demo/piano/index.html" title="ピアノ教室の見本（PC）" tabindex="-1" scrolling="no"></iframe></div></div>
+        <div class="phone"><div class="view" data-w="375"><iframe loading="lazy" src="demo/piano/index.html" title="ピアノ教室の見本（スマホ）" tabindex="-1" scrolling="no"></iframe></div></div>
+      </a>
+      <div class="s-body rv d1">
+        <span class="s-kind">ピアノ教室・習い事・塾</span>
+        <h3>おとのはピアノ教室</h3>
+        <p>明るく、親しみやすい作り。保護者の方が知りたい月謝・振替・レッスンの進み方をはっきり書き、体験レッスンの申し込みまで1ページで完結します。</p>
+        <ul class="s-tags"><li>コースと月謝</li><li>レッスンの進み方</li><li>1年のながれ</li><li>講師紹介</li><li>体験の申し込みフォーム</li></ul>
+        <a class="btn" href="demo/piano/index.html">この見本を開く</a>
+      </div>
+    </article>
+
+    <article class="sample">
+      <a class="s-vis rv" href="demo/salon/index.html">
+        <span class="tagline">SALON</span>
+        <div class="browser full"><div class="bar"><i></i><i></i><i></i><span>lumiere-salon.example</span></div><div class="view" data-w="1280"><iframe loading="lazy" src="demo/salon/index.html" title="美容室の見本（PC）" tabindex="-1" scrolling="no"></iframe></div></div>
+        <div class="phone"><div class="view" data-w="375"><iframe loading="lazy" src="demo/salon/index.html" title="美容室の見本（スマホ）" tabindex="-1" scrolling="no"></iframe></div></div>
+      </a>
+      <div class="s-body rv d1">
+        <span class="s-kind">美容室・ヘアサロン</span>
+        <h3>LUMIÈRE</h3>
+        <p>黒と金を基調にした、高級感のある作り。質問に答えると似合うスタイルを提案する診断クイズや、スタイリスト紹介、予約フォームを備えています。</p>
+        <ul class="s-tags"><li>診断クイズ</li><li>メニュー</li><li>スタイリスト紹介</li><li>ギャラリー</li><li>予約フォーム</li></ul>
+        <a class="btn" href="demo/salon/index.html">この見本を開く</a>
+      </div>
+    </article>
+
+    <p class="note">※ 見本のお店・人物・連絡先はすべて架空のものです。写真は素材サイト（Unsplash）のものを使っています。実際の制作では、お店の写真を使います。</p>
+  </div>
+</section>
+
+<section id="include">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="label">INCLUDED</span>
+      <h2>どのプランにも、<br>入っているもの。</h2>
+    </div>
+    <div class="inc-grid rv d1">
+      <div class="inc"><svg viewBox="0 0 32 32"><rect x="9" y="3" width="14" height="26" rx="3"/><path d="M14 25h4"/></svg><h3>スマホ対応</h3><p>スマホ・タブレット・パソコン、どの画面でも見やすく。</p></div>
+      <div class="inc"><svg viewBox="0 0 32 32"><path d="M16 29s9-8.500 9-15a9 9 0 1 0-18 0c0 6.500 9 15 9 15z"/><circle cx="16" cy="14" r="3"/></svg><h3>地図とアクセス</h3><p>Googleマップを埋め込み、道順をすぐ開けます。</p></div>
+      <div class="inc"><svg viewBox="0 0 32 32"><path d="M6 8c0 10 8 18 18 18l2-5-6-3-2 3c-3-1-6-4-7-7l3-2-3-6z"/></svg><h3>電話・予約ボタン</h3><p>スマホの下に固定。ワンタップで電話やLINE、予約へ。</p></div>
+      <div class="inc"><svg viewBox="0 0 32 32"><rect x="4" y="6" width="24" height="20" rx="2"/><path d="M4 12h24M10 18h8M10 22h5"/></svg><h3>メニューと料金表</h3><p>いくらかかるかが、ひと目で分かる表にします。</p></div>
+      <div class="inc"><svg viewBox="0 0 32 32"><circle cx="14" cy="14" r="8"/><path d="M20 20l7 7"/></svg><h3>検索の基本設定</h3><p>タイトル・説明文・店舗情報を、検索に伝わる形で入れます。</p></div>
+      <div class="inc"><svg viewBox="0 0 32 32"><path d="M17 3L7 18h8l-1 11 10-15h-8z"/></svg><h3>軽くて速い</h3><p>余計な仕組みを入れず、電波の弱い場所でもすぐ開きます。</p></div>
+      <div class="inc"><svg viewBox="0 0 32 32"><path d="M5 22l5-5 4 4 6-8 7 9"/><rect x="3" y="5" width="26" height="22" rx="2"/></svg><h3>写真の調整</h3><p>スマホで撮った写真を、明るさと切り抜きで整えて使います。</p></div>
+      <div class="inc"><svg viewBox="0 0 32 32"><path d="M6 16a10 10 0 0 1 17-7l3 3M26 16a10 10 0 0 1-17 7l-3-3"/><path d="M26 6v6h-6M6 26v-6h6"/></svg><h3>修正2回</h3><p>全体の案を見ていただいてから、2回まで直します。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="price" class="price">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="label">PRICE</span>
+      <h2>料金</h2>
+      <p class="intro">見積もりのあとで金額が増えることはありません。</p>
+    </div>
+    <div class="plans">
+      <div class="plan main rv">
+        <span class="pop">おすすめ</span>
+        <h3>1ページのホームページ</h3>
+        <p class="for">お店の情報を、縦に1枚でまとめる形</p>
+        <div class="yen">50,000<small>円</small></div>
+        <span class="first">最初の3件は 30,000円（2026年12月31日まで）</span>
+        <ul><li>お店の紹介・メニューと料金</li><li>地図・営業時間・アクセス</li><li>予約や問い合わせへのボタン</li><li>公開の作業まで</li><li>納期：素材がそろってから7日</li></ul>
+      </div>
+      <div class="plan rv d1">
+        <h3>5ページまでのホームページ</h3>
+        <p class="for">メニューやスタッフを分けて載せたい方に</p>
+        <div class="yen">90,000<small>円</small></div>
+        <span class="first">最初の3件は 60,000円（2026年12月31日まで）</span>
+        <ul><li>1ページの内容すべて</li><li>メニュー・スタッフ・お知らせ・よくある質問などのページ</li><li>納期：素材がそろってから14日</li></ul>
+      </div>
+      <div class="plan rv d2">
+        <h3>公開後の更新（任意）</h3>
+        <p class="for">作ったあとの面倒を任せたい方に</p>
+        <div class="yen">5,000<small>円／月</small></div>
+        <span class="first">いつでもやめられます</span>
+        <ul><li>文や写真の差し替え 月2回まで</li><li>表示の不具合の直し</li><li>ドメイン・サーバーの更新のご案内</li></ul>
+      </div>
+    </div>
+    <div class="extra rv">
+      <div><b>今あるサイトの直し　15,000円〜</b>スマホで崩れる、情報が古い、ページを足したい、など。見てからお見積もりします。</div>
+      <div><b>料金に含まないもの</b>ドメイン代・サーバー代（お客様のご契約。手順はご案内します）、写真の撮影、ロゴの制作、予約システムやネットショップの組み込み。</div>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap flow-grid">
+    <div class="sec-head rv">
+      <span class="label">FLOW</span>
+      <h2>進め方</h2>
+      <p class="intro">やりとりはすべてメッセージで行います。お店の合間に、好きな時間に返信してください。</p>
+    </div>
+    <ol class="steps rv d1">
+      <li><h3>ご相談</h3><p>業種と、載せたい内容をひとこと教えてください。お店のSNSや地図のURLがあれば、それだけでも十分です。</p></li>
+      <li><h3>見本をお見せする<span class="free">無料</span></h3><p>あなたのお店のトップページの見本を作ります。ここでやめても、料金はかかりません。</p></li>
+      <li><h3>質問票と素材<span>ここから正式なご依頼</span></h3><p>店名・メニュー・営業時間・写真などを、質問票に沿って送っていただきます。写真はスマホで撮ったもので大丈夫です。</p></li>
+      <li><h3>制作・確認</h3><p>3日以内に全体の案をお見せします。スマホとパソコンの両方で見ていただき、2回まで直します。</p></li>
+      <li><h3>公開</h3><p>公開の作業はこちらで行います。ドメインの契約だけ、画面の写真つきの手順でご案内します。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="honest">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="label">HONESTLY</span>
+      <h2>先に、<span>正直に</span><br>お伝えしておくこと。</h2>
+    </div>
+    <div class="h-grid">
+      <div class="h rv"><span class="n">01</span><h3>制作にAIを使います</h3><p>文の下書きとコードの作成にAI（Claude）を使い、公開前にすべてのページをスマホとパソコンで確認します。そのぶん、安く早くお届けできます。</p></div>
+      <div class="h rv d1"><span class="n">02</span><h3>始めたばかりです</h3><p>この屋号での制作実績はこれからです。そのため、最初の3件は実績づくりの料金でお受けしています。</p></div>
+      <div class="h rv d2"><span class="n">03</span><h3>集客の約束はしません</h3><p>ホームページを作れば必ずお客様が増える、とは言いません。お店の情報が正しく、見やすく伝わる場所を作ります。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq-wrap">
+    <div class="sec-head rv">
+      <span class="label">Q &amp; A</span>
+      <h2>よくある質問</h2>
+    </div>
+    <div class="rv d1">
+      <details open><summary>写真がなくても作れますか？</summary><p>作れます。スマホで撮った写真で十分です。撮り方のコツもお伝えします。写真なしで、色と文字だけで作ることもできます。</p></details>
+      <details><summary>パソコンが苦手でも大丈夫ですか？</summary><p>大丈夫です。公開の作業はこちらで行います。ドメインの契約だけ、画面の写真つきの手順でご案内します。</p></details>
+      <details><summary>毎月の費用は必ずかかりますか？</summary><p>月額の更新は任意です。申し込まない場合にかかるのは、ドメイン代など、お客様が契約先に払う費用だけです。</p></details>
+      <details><summary>見本を見て断っても、本当に無料ですか？</summary><p>はい。見本の段階では料金はかかりません。こちらから何度もご連絡することもありません。</p></details>
+      <details><summary>電話や対面で打ち合わせできますか？</summary><p>やりとりはメッセージでお願いしています。記録が残るので、言った・言わないが起きません。</p></details>
+      <details><summary>作ったあと、自分で更新できますか？</summary><p>できます。更新の手順をお渡しします。月額の更新をお申し込みいただければ、こちらで行います。</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap rv">
+    <h2>まず、見本を見てから<br>決めてください。</h2>
+    <p>業種と、載せたい内容をひとこと。あなたのお店の見本をお返しします。</p>
+    <span class="pending">お問い合わせ先は準備中です</span>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><a class="logo" href="#top"><i></i>ネオリアリズム</a><span>© 2026 Neorealism</span></div></footer>
+
+<script>
+const hd=document.getElementById('hd');
+const onS=()=>hd.classList.toggle('solid',scrollY>40);
+addEventListener('scroll',onS,{passive:true});onS();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.rv:not(.in)').forEach(el=>io.observe(el));
+// 見本の画面を枠の幅に合わせて縮める
+const fit=v=>{const w=+v.dataset.w,f=v.firstElementChild,s=v.clientWidth/w;f.style.width=w+'px';f.style.height=Math.ceil(v.clientHeight/s)+'px';f.style.transform='scale('+s+')'};
+const ro=new ResizeObserver(es=>es.forEach(e=>fit(e.target)));
+document.querySelectorAll('.view').forEach(v=>{fit(v);ro.observe(v)});
+</script>
+</body>
+</html>
